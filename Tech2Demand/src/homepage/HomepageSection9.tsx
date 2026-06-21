@@ -2,7 +2,7 @@ import React from 'react';
 
 const HomepageSection9: React.FC = () => {
     return (
-        <section className="bg-[#f7f8fa] w-full min-h-screen font-sans antialiased flex flex-col items-center">
+        <section className="bg-[#f7f8fa] w-full font-sans antialiased flex flex-col items-center">
 
             {/* Footer Container */}
             <div className="w-full max-w-[1400px] px-6 pb-12 z-10 relative">

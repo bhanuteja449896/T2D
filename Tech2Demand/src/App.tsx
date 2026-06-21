@@ -1,13 +1,13 @@
 import React from 'react';
-import HomepageSection1 from './homepageSection1/HomepageSection1';
-import HomepageSection2 from './homepageSection2/HomepageSection2';
-import HomepageSection3 from './homepageSection3/HomepageSection3';
-import HomepageSection4 from './homepageSection4/HomepageSection4';
-import HomepageSection5 from './homepageSection5/HomepageSection5';
-import HomepageSection6 from './homepageSection6/HomepageSection6';
-import HomepageSection7 from './homepageSection7/HomepageSection7';
-import HomepageSection8 from './homepageSection8/HomepageSection8';
-import HomepageSection9 from './homepageSection9/HomepageSection9';
+import HomepageSection1 from './homepage/HomepageSection1';
+import HomepageSection2 from './homepage/HomepageSection2';
+import HomepageSection3 from './homepage/HomepageSection3';
+import HomepageSection4 from './homepage/HomepageSection4';
+import HomepageSection5 from './homepage/HomepageSection5';
+import HomepageSection6 from './homepage/HomepageSection6';
+import HomepageSection7 from './homepage/HomepageSection7';
+import HomepageSection8 from './homepage/HomepageSection8';
+import HomepageSection9 from './homepage/HomepageSection9';
 
 function App() {
   return (
