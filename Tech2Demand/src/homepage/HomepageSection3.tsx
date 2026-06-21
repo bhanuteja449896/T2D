@@ -8,7 +8,7 @@ const HomepageSection3: React.FC = () => {
             <div className="max-w-[1200px] w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 
                 {/* Left Column: Complex Illustration */}
-                <div className="relative w-full max-w-[550px] aspect-square mx-auto flex items-center justify-center">
+                <div className="relative w-[90%] md:w-full max-w-[550px] aspect-square mx-auto flex items-center justify-center mb-8 lg:mb-0">
                     
                     {/* Ambient Glow Behind Illustration */}
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] h-[70%] bg-blue-300 rounded-full mix-blend-multiply filter blur-[80px] opacity-30"></div>
@@ -108,9 +108,9 @@ const HomepageSection3: React.FC = () => {
                     </p>
 
                     {/* Main Heading */}
-                    <h1 className="text-[40px] lg:text-[46px] font-bold text-brand-dark leading-[1.15] tracking-tight">
-                        Unify Teams & Partners.<br /> 
-                        Drive Seamless B2B<br /> 
+                    <h1 className="text-[32px] md:text-[40px] lg:text-[46px] font-bold text-brand-dark leading-[1.15] tracking-tight">
+                        Unify Teams & Partners.<br className="hidden md:block" /> 
+                        Drive Seamless B2B<br className="hidden md:block" /> 
                         Lead Flows.
                     </h1>
 

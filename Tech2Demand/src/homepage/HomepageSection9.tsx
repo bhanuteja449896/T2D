@@ -15,10 +15,10 @@ const HomepageSection9: React.FC = () => {
                     <div className="absolute -bottom-[20%] -left-[10%] w-[400px] md:w-[600px] h-[400px] md:h-[600px] bg-[#112f66] rounded-full mix-blend-screen filter blur-[100px] md:blur-[140px] opacity-50 pointer-events-none"></div>
 
                     {/* Main Content Area */}
-                    <div className="relative z-10 pt-16 md:pt-24 pb-8 px-10 md:px-16 lg:px-20">
+                    <div className="relative z-10 pt-12 md:pt-24 pb-8 px-6 md:px-16 lg:px-20">
                         
                         {/* Faint Inset Top Separator Line */}
-                        <div className="absolute top-[80px] md:top-[100px] left-10 md:left-20 right-10 md:right-20 h-px bg-white/[0.06]"></div>
+                        <div className="absolute top-[60px] md:top-[100px] left-6 md:left-20 right-6 md:right-20 h-px bg-white/[0.06]"></div>
 
                         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_auto_auto] gap-12 lg:gap-24 mt-6">
                             

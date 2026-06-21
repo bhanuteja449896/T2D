@@ -4,9 +4,9 @@ const HomepageSection2: React.FC = () => {
     return (
         <div className="w-full bg-white font-sans antialiased">
             <section className="w-full max-w-[1400px] mx-auto px-8 pb-24">
-                <div className="bg-white rounded-[32px] p-10 md:p-16 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-50">
+                <div className="bg-white rounded-[24px] md:rounded-[32px] p-6 md:p-16 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-50">
                 {/* Section Header */}
-                <h2 className="text-[36px] font-bold text-center text-navy mb-10 tracking-tight">Our Service Capabilities</h2>
+                <h2 className="text-[28px] md:text-[36px] font-bold text-center text-navy mb-8 md:mb-10 tracking-tight">Our Service Capabilities</h2>
 
                 {/* Tabs */}
                 <div className="flex flex-wrap justify-center gap-4 mb-16">

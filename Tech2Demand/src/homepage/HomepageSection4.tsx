@@ -200,7 +200,7 @@ const HomepageSection4: React.FC = () => {
                     </div>
 
                     {/* Main Heading */}
-                    <h1 className="text-[38px] lg:text-[44px] font-bold text-[#111827] leading-[1.15] tracking-tight">
+                    <h1 className="text-[30px] md:text-[38px] lg:text-[44px] font-bold text-[#111827] leading-[1.15] tracking-tight">
                         Smart Segmentation<br />
                         Accelerates Lead Quality.
                     </h1>

@@ -8,7 +8,7 @@ const HomepageSection7: React.FC = () => {
             <div className="max-w-[1400px] w-full mx-auto px-8 grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-16 items-center">
                 
                 {/* Left Column: Content Area */}
-                <div className="bg-[#eef4ff] rounded-[32px] p-10 sm:p-14 lg:p-16 flex flex-col gap-6 justify-center h-full">
+                <div className="bg-[#eef4ff] rounded-[24px] md:rounded-[32px] p-6 md:p-10 lg:p-16 flex flex-col gap-5 md:gap-6 justify-center h-full">
                     
                     {/* Pill Label */}
                     <div className="w-max bg-[#dce7f9] text-[#557ab5] text-[12px] font-bold uppercase tracking-[0.08em] px-4 py-1.5 rounded-full">
@@ -16,8 +16,8 @@ const HomepageSection7: React.FC = () => {
                     </div>
                     
                     {/* Heading */}
-                    <h2 className="text-[38px] md:text-[44px] lg:text-[48px] font-bold text-[#04112e] leading-[1.15] tracking-tight">
-                        Hear how leading<br />companies accelerate<br />growth with our lead<br />generation platform.
+                    <h2 className="text-[30px] md:text-[44px] lg:text-[48px] font-bold text-[#04112e] leading-[1.15] tracking-tight">
+                        Hear how leading<br className="hidden md:block" />companies accelerate<br className="hidden md:block" />growth with our lead<br className="hidden md:block" />generation platform.
                     </h2>
                     
                     {/* Paragraph */}
@@ -30,7 +30,7 @@ const HomepageSection7: React.FC = () => {
                 <div className="flex flex-col w-full max-w-[440px] mx-auto relative pt-4 pb-8 lg:pb-0">
                     
                     {/* Card 1 */}
-                    <div className="w-[340px] sm:w-[360px] self-end mr-6 z-40 relative shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] bg-white rounded-[16px] p-5 border border-gray-100/50">
+                    <div className="w-[90%] sm:w-[360px] self-end mr-2 sm:mr-6 z-40 relative shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] bg-white rounded-[16px] p-5 border border-gray-100/50">
                         <div className="flex items-center gap-3.5 mb-3">
                             <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Chen" className="w-[42px] h-[42px] rounded-full object-cover" />
                             <div className="flex flex-col">
@@ -43,7 +43,7 @@ const HomepageSection7: React.FC = () => {
 
                     {/* Card 2 */}
                     {/* Note: Negative margin (-mt-[40px]) pulls it up to tuck under Card 1 */}
-                    <div className="w-[340px] sm:w-[360px] self-end mr-0 -mt-[40px] z-30 relative shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] bg-white rounded-[16px] p-5 border border-gray-100/50 pb-8">
+                    <div className="w-[90%] sm:w-[360px] self-end mr-0 -mt-[40px] z-30 relative shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] bg-white rounded-[16px] p-5 border border-gray-100/50 pb-8">
                         <div className="flex items-center gap-3.5">
                             <img src="https://randomuser.me/api/portraits/men/86.jpg" alt="Sarah Taylan" className="w-[42px] h-[42px] rounded-full object-cover" />
                             <div className="flex flex-col">
@@ -55,7 +55,7 @@ const HomepageSection7: React.FC = () => {
 
                     {/* Card 3 */}
                     {/* Wider, sticks out to the left (ml-2), high z-index to overlap Card 2 */}
-                    <div className="w-[360px] sm:w-[380px] self-start ml-2 -mt-[25px] z-50 relative shadow-[0_25px_50px_-15px_rgba(0,0,0,0.15)] bg-white rounded-[16px] p-5 border border-gray-100/50">
+                    <div className="w-[95%] sm:w-[380px] self-start ml-0 sm:ml-2 -mt-[25px] z-50 relative shadow-[0_25px_50px_-15px_rgba(0,0,0,0.15)] bg-white rounded-[16px] p-5 border border-gray-100/50">
                         <div className="flex items-center gap-3.5 mb-3">
                             <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="David Kim" className="w-[42px] h-[42px] rounded-full object-cover" />
                             <div className="flex flex-col">
@@ -68,7 +68,7 @@ const HomepageSection7: React.FC = () => {
 
                     {/* Card 4 */}
                     {/* Standard gap (mt-4) */}
-                    <div className="w-[340px] sm:w-[360px] self-end mr-2 mt-4 z-40 relative shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] bg-white rounded-[16px] p-5 border border-gray-100/50">
+                    <div className="w-[90%] sm:w-[360px] self-end mr-0 sm:mr-2 mt-4 z-40 relative shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] bg-white rounded-[16px] p-5 border border-gray-100/50">
                         <div className="flex items-center gap-3.5 mb-3">
                             <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Jessica Lee" className="w-[42px] h-[42px] rounded-full object-cover" />
                             <div className="flex flex-col">
@@ -81,7 +81,7 @@ const HomepageSection7: React.FC = () => {
 
                     {/* Card 5 */}
                     {/* Tucked under Card 4 via negative margin */}
-                    <div className="w-[340px] sm:w-[360px] self-end mr-6 -mt-[30px] z-30 relative shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] bg-white rounded-[16px] p-5 border border-gray-100/50 hidden sm:block">
+                    <div className="w-[90%] sm:w-[360px] self-end mr-2 sm:mr-6 -mt-[30px] z-30 relative shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] bg-white rounded-[16px] p-5 border border-gray-100/50 hidden sm:block">
                         <div className="flex items-center gap-3.5">
                             <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Chen" className="w-[42px] h-[42px] rounded-full object-cover" />
                             <div className="flex flex-col">

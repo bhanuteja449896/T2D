@@ -32,8 +32,8 @@ const HomepageSection1: React.FC = () => {
       <main className="flex-1 w-full max-w-[1400px] mx-auto px-8 pt-12 pb-24 flex flex-col lg:flex-row items-center justify-between gap-16">
         
         {/* Left: Text Content */}
-        <div className="w-full lg:w-[45%] flex flex-col items-start z-10">
-            <h1 className="text-[48px] font-bold text-[#12265A] leading-[1.1] mb-6 tracking-tight">
+        <div className="w-full lg:w-[45%] flex flex-col items-center lg:items-start text-center lg:text-left z-10">
+            <h1 className="text-[36px] sm:text-[42px] lg:text-[48px] font-bold text-[#12265A] leading-[1.1] mb-6 tracking-tight">
                 We Help You Attract<br />
                 the Right Prospects,<br />
                 Fill Your Pipeline,<br />
@@ -55,15 +55,15 @@ const HomepageSection1: React.FC = () => {
         </div>
 
         {/* Right: Dashboard Mockup */}
-        <div className="w-full lg:w-[55%] flex justify-center lg:justify-end relative">
+        <div className="w-full lg:w-[55%] flex justify-center lg:justify-end relative mt-12 lg:mt-0">
             {/* Glow effect behind mockup */}
             <div className="absolute inset-0 bg-blue-100 blur-[80px] opacity-40 rounded-full scale-75 -z-10"></div>
             
             {/* Dashboard Container */}
-            <div className="bg-white rounded-2xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] p-2 w-full max-w-[760px] h-[520px] flex border border-gray-100 overflow-hidden relative">
+            <div className="bg-white rounded-2xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] p-2 w-full max-w-[760px] flex flex-col md:flex-row border border-gray-100 overflow-hidden relative h-auto lg:h-[520px]">
                 
                 {/* Sidebar */}
-                <div className="w-[200px] bg-[#161D2D] rounded-xl flex flex-col text-gray-400 font-medium text-xs">
+                <div className="hidden md:flex w-[200px] bg-[#161D2D] rounded-xl flex-col text-gray-400 font-medium text-xs">
                     {/* Sidebar Logo */}
                     <div className="flex items-center gap-2 text-white p-6 mb-2">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,9 +119,9 @@ const HomepageSection1: React.FC = () => {
                     </div>
 
                     {/* Header & Filters */}
-                    <div className="flex justify-between items-end mb-4">
+                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-4 gap-3">
                         <h2 className="text-lg font-bold text-[#12265A]">Dashboard</h2>
-                        <div className="flex gap-2">
+                        <div className="flex flex-wrap gap-2">
                             <button className="text-[10px] font-medium text-gray-600 border border-gray-200 rounded px-2.5 py-1.5 flex items-center gap-1 hover:bg-gray-50">
                                 All Services <i className="fas fa-chevron-down text-[8px] text-gray-400"></i>
                             </button>
@@ -132,7 +132,7 @@ const HomepageSection1: React.FC = () => {
                     </div>
 
                     {/* Stats Row */}
-                    <div className="grid grid-cols-4 gap-3 mb-4">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
                         {/* Stat Card 1 */}
                         <div className="bg-[#12265A] rounded-xl p-3 flex flex-col justify-between shadow-sm relative overflow-hidden">
                             <div className="flex justify-between items-start z-10">
@@ -187,10 +187,10 @@ const HomepageSection1: React.FC = () => {
                     </div>
 
                     {/* Bottom Area (Table & Funnel) */}
-                    <div className="flex gap-4 flex-1 h-[180px]">
+                    <div className="flex flex-col md:flex-row gap-4 flex-1 h-auto md:h-[180px]">
                         
                         {/* Table Section */}
-                        <div className="flex-[1.5] border border-gray-100 rounded-xl p-3 shadow-sm flex flex-col bg-white overflow-hidden">
+                        <div className="flex-[1.5] border border-gray-100 rounded-xl p-3 shadow-sm flex flex-col bg-white overflow-hidden overflow-x-auto min-h-[150px]">
                             <div className="flex justify-between items-center mb-3">
                                 <h3 className="text-[11px] font-bold text-[#12265A]">Table rows</h3>
                                 <button className="text-[9px] font-medium text-gray-500 border border-gray-100 rounded px-2 py-1 flex items-center gap-1">
@@ -268,11 +268,11 @@ const HomepageSection1: React.FC = () => {
                         </div>
 
                         {/* Funnel Section */}
-                        <div className="flex-1 border border-gray-100 rounded-xl p-3 shadow-sm flex flex-col bg-white items-center">
+                        <div className="flex-1 border border-gray-100 rounded-xl p-3 shadow-sm flex flex-col bg-white items-center min-h-[160px]">
                             <div className="w-full text-[11px] font-bold text-[#12265A] mb-4 text-left">Funnel chart</div>
                             
                             <div className="flex-1 w-full flex justify-center mt-1">
-                                <svg viewBox="0 0 100 100" className="w-[85%] h-full" preserveAspectRatio="none">
+                                <svg viewBox="0 0 100 100" className="w-[85%] h-full min-h-[80px]" preserveAspectRatio="none">
                                     {/* Dark Blue top */}
                                     <polygon points="0,0 100,0 85,25 15,25" fill="#12265A" />
                                     {/* Med Blue */}

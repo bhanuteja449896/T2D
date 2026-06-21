@@ -6,7 +6,7 @@ const HomepageSection6: React.FC = () => {
         <section className="bg-[#f4f6f9] w-full min-h-screen flex items-center justify-center font-sans antialiased p-6">
 
             {/* CTA Card Container */}
-            <div className="relative w-full max-w-[1400px] h-[520px] bg-gradient-to-br from-[#041036] via-[#0d2d85] to-[#295fe3] rounded-[24px] overflow-hidden shadow-2xl shadow-blue-900/10 flex flex-col items-center justify-center text-center p-10 mx-auto border border-blue-900/20">
+            <div className="relative w-full max-w-[1400px] h-auto min-h-[400px] md:h-[520px] py-16 md:p-10 bg-gradient-to-br from-[#041036] via-[#0d2d85] to-[#295fe3] rounded-[24px] overflow-hidden shadow-2xl shadow-blue-900/10 flex flex-col items-center justify-center text-center px-6 mx-auto border border-blue-900/20">
                 
                 {/* Ambient Glow Effects */}
                 {/* Top Right Glow */}
@@ -24,13 +24,13 @@ const HomepageSection6: React.FC = () => {
                 <div className="relative z-10 flex flex-col items-center">
                     
                     {/* Headline */}
-                    <h2 className="text-[44px] md:text-[52px] font-bold text-white leading-[1.12] tracking-tight mb-5">
-                        Accelerate Your Enterprise<br />Growth Today.
+                    <h2 className="text-[32px] md:text-[44px] lg:text-[52px] font-bold text-white leading-[1.12] tracking-tight mb-5">
+                        Accelerate Your Enterprise<br className="hidden md:block" />Growth Today.
                     </h2>
                     
                     {/* Subheadline */}
-                    <p className="text-[18px] md:text-[20px] text-[#b4c4eb] leading-[1.6] max-w-[650px] mb-10">
-                        Schedule your personalized demo to see how our<br />platform transforms performance and scalability.
+                    <p className="text-[16px] md:text-[20px] text-[#b4c4eb] leading-[1.6] max-w-[650px] mb-10">
+                        Schedule your personalized demo to see how our<br className="hidden md:block" />platform transforms performance and scalability.
                     </p>
                     
                     {/* Action Buttons */}

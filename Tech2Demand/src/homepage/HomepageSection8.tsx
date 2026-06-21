@@ -15,7 +15,7 @@ const HomepageSection8: React.FC = () => {
                     </div>
                     
                     {/* Heading */}
-                    <h2 className="text-[36px] md:text-[42px] font-bold text-[#0b1221] leading-tight tracking-tight mb-4">
+                    <h2 className="text-[28px] md:text-[42px] font-bold text-[#0b1221] leading-tight tracking-tight mb-4">
                         Latest News & Resources
                     </h2>
                     
@@ -89,7 +89,7 @@ const HomepageSection8: React.FC = () => {
                         <div className="bg-white rounded-[24px] p-8 shadow-[0_10px_30px_-15px_rgba(0,0,0,0.05)] flex-1">
                             
                             {/* Item 1 */}
-                            <div className="flex items-center justify-between gap-6 pb-6 border-b border-gray-100">
+                            <div className="flex items-start md:items-center justify-between gap-3 md:gap-6 pb-6 border-b border-gray-100">
                                 <div className="flex flex-col">
                                     <div className="text-[11px] text-[#64748b] font-medium tracking-wide uppercase mb-2">
                                         Platform Update | Nov 12
@@ -110,7 +110,7 @@ const HomepageSection8: React.FC = () => {
                             </div>
 
                             {/* Item 2 */}
-                            <div className="flex items-center justify-between gap-6 pt-6">
+                            <div className="flex items-start md:items-center justify-between gap-3 md:gap-6 pt-6">
                                 <div className="flex flex-col">
                                     <div className="text-[11px] text-[#64748b] font-medium tracking-wide uppercase mb-2">
                                         Platform Update | Nov 13
@@ -141,9 +141,9 @@ const HomepageSection8: React.FC = () => {
                                 <input 
                                     type="email" 
                                     placeholder="Your email address" 
-                                    className="bg-transparent border-none outline-none text-white placeholder-gray-400 px-5 text-[14px] w-full"
+                                    className="bg-transparent border-none outline-none text-white placeholder-gray-400 px-3 md:px-5 text-[14px] w-full"
                                 />
-                                <button className="bg-white text-[#0b1221] font-bold text-[13px] px-7 py-3 rounded-full hover:bg-gray-100 transition-colors whitespace-nowrap">
+                                <button className="bg-white text-[#0b1221] font-bold text-[12px] md:text-[13px] px-4 md:px-7 py-3 rounded-full hover:bg-gray-100 transition-colors whitespace-nowrap">
                                     SUBSCRIBE
                                 </button>
                             </div>

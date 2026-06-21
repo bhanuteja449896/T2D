@@ -27,7 +27,7 @@ const HomepageSection5: React.FC = () => {
                     </div>
 
                     {/* Main Heading */}
-                    <h1 className="text-[40px] lg:text-[46px] font-bold text-[#111827] leading-[1.12] tracking-tight">
+                    <h1 className="text-[32px] md:text-[40px] lg:text-[46px] font-bold text-[#111827] leading-[1.12] tracking-tight">
                         Prospect Intelligence.<br />
                         Know Every Lead,<br />
                         Inside Out.
@@ -67,7 +67,7 @@ const HomepageSection5: React.FC = () => {
                     <div className="w-full h-[520px] bg-white rounded-[24px] shadow-[0_25px_50px_-12px_rgba(15,23,42,0.15)] flex overflow-hidden border border-white/50 relative ring-1 ring-gray-100">
                         
                         {/* Sidebar */}
-                        <div className="w-[140px] bg-[#1c2438] flex flex-col p-4 z-10 text-gray-300">
+                        <div className="hidden sm:flex w-[140px] bg-[#1c2438] flex-col p-4 z-10 text-gray-300">
                             {/* Logo */}
                             <div className="flex items-center gap-2 mb-8 mt-1">
                                 <div className="w-6 h-6 rounded-full bg-blue-500 relative overflow-hidden">
@@ -125,7 +125,7 @@ const HomepageSection5: React.FC = () => {
                             </div>
 
                             {/* Dashboard Grid */}
-                            <div className="grid grid-cols-[1.5fr_1fr] gap-4">
+                            <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr] gap-4">
                                 
                                 {/* Left Column Widgets */}
                                 <div className="flex flex-col gap-4">
@@ -321,7 +321,7 @@ const HomepageSection5: React.FC = () => {
                     </div>
 
                     {/* Floating Absolute Funnel Chart Card */}
-                    <div className="absolute -top-5 -right-6 lg:-right-10 w-[240px] bg-white rounded-[18px] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)] p-5 z-20 border border-gray-50">
+                    <div className="hidden sm:block absolute -top-5 -right-6 lg:-right-10 w-[240px] bg-white rounded-[18px] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)] p-5 z-20 border border-gray-50">
                         <h3 className="text-[13px] font-bold text-gray-900 mb-4 tracking-tight">Funnel chart</h3>
                         
                         {/* SVG Funnel */}
