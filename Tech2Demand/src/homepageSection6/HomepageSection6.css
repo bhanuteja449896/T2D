@@ -1,0 +1,16 @@
+/* Custom Dotted Background Pattern */
+.bg-dots {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.2) 1.5px, transparent 1.5px);
+    background-size: 18px 18px;
+}
+
+/* Masks for fading the dots smoothly into the background */
+.mask-bottom-left {
+    -webkit-mask-image: radial-gradient(circle at 0% 100%, black 0%, transparent 70%);
+    mask-image: radial-gradient(circle at 0% 100%, black 0%, transparent 70%);
+}
+
+.mask-top-right {
+    -webkit-mask-image: radial-gradient(circle at 100% 0%, black 0%, transparent 70%);
+    mask-image: radial-gradient(circle at 100% 0%, black 0%, transparent 70%);
+}

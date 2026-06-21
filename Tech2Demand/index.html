@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tech2demand</title>
+    <!-- Fonts and Icons for HomepageSection1 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS (via CDN to avoid terminal commands) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            DEFAULT: '#12265A',
+                            dark: '#161D2D',
+                        },
+                        muted: '#6B7280',
+                        lightbg: '#E6EAF2',
+                        pagebg: '#F5F7FA',
+                        brand: {
+                            bg: '#f5f7fa',        /* Very light gray/blue background */
+                            dark: '#141b2d',      /* Deep navy for headings */
+                            gray: '#4a5568',      /* Paragraph text */
+                            lightGray: '#828fa3', /* Eyebrow text */
+                            accent: '#3b82f6',    /* Bright blue for icons */
+                            accentDark: '#2563eb',
+                            box: '#1a2238',       /* Dark central box */
+                        }
+                    },
+                    boxShadow: {
+                        'float': '0 10px 25px -5px rgba(59, 130, 246, 0.3)',
+                        'float-dark': '0 10px 25px -5px rgba(20, 27, 45, 0.4)',
+                        'center-box': '0 25px 50px -12px rgba(20, 27, 45, 0.5)',
+                    }
+                }
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
