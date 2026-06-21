@@ -1,4 +1,3 @@
-import React from 'react';
 import HomepageSection1 from './homepage/HomepageSection1';
 import HomepageSection2 from './homepage/HomepageSection2';
 import HomepageSection3 from './homepage/HomepageSection3';
