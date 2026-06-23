@@ -4,7 +4,7 @@ import { ParallaxLayer, Reveal, StaggerContainer, StaggerItem } from '../animati
 
 const Section4: React.FC = () => {
     return (
-        <section className="relative w-full overflow-hidden bg-[#050814] text-white pt-28 pb-32 font-sans border-t border-white/5">
+        <section className="relative w-full overflow-hidden bg-[#050814] text-white pt-16 md:pt-28 pb-20 md:pb-32 font-sans border-t border-white/5">
             
             {/* === BACKGROUND EFFECTS (Section Only) === */}
             
@@ -52,11 +52,11 @@ const Section4: React.FC = () => {
 
 
             {/* === MAIN CONTENT CONTAINER === */}
-            <div className="relative z-10 w-full px-6 md:px-[60px] lg:px-[100px] mx-auto flex flex-col items-center">
+            <div className="relative z-10 w-full px-4 sm:px-6 md:px-[60px] lg:px-[100px] mx-auto flex flex-col items-center">
                 
                 {/* Headline Block */}
                 <Reveal className="text-center w-full max-w-4xl mx-auto flex flex-col items-center">
-                    <h1 className="text-[56px] leading-[1.1] md:text-[72px] lg:text-[80px] font-bold tracking-tight">
+                    <h1 className="text-[40px] sm:text-[48px] md:text-[72px] lg:text-[80px] font-bold tracking-tight leading-[1.1]">
                         <span className="block text-white">Ready to Build a</span>
                         <span className="block bg-gradient-to-r from-[#b14dff] via-[#7d64ff] to-[#4f7cff] bg-clip-text text-transparent pb-2">
                             Predictable Revenue Engine?
@@ -145,7 +145,7 @@ const Section4: React.FC = () => {
                 </StaggerContainer>
 
                 {/* Bottom CTA Panel */}
-                <Reveal className="mt-24 w-full max-w-[76rem] rounded-[2.5rem] bg-gradient-to-br from-white/[0.04] to-transparent border border-white/[0.08] p-10 lg:p-14 flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-16 shadow-[0_0_80px_rgba(166,77,255,0.06)] relative overflow-hidden backdrop-blur-sm">
+                <Reveal className="mt-24 w-full max-w-[76rem] rounded-[2.5rem] bg-gradient-to-br from-white/[0.04] to-transparent border border-white/[0.08] p-6 sm:p-10 lg:p-14 flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-16 shadow-[0_0_80px_rgba(166,77,255,0.06)] relative overflow-hidden backdrop-blur-sm">
                     
                     {/* Inner Panel Subtle Glow */}
                     <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-[#9a42ff]/5 via-transparent to-[#4f7cff]/5 pointer-events-none"></div>
@@ -155,7 +155,7 @@ const Section4: React.FC = () => {
                         <div className="w-24 h-24 shrink-0 rounded-2xl bg-gradient-to-br from-[#b14dff]/20 to-[#4f7cff]/20 border border-[#b14dff]/30 flex items-center justify-center shadow-[0_0_30px_rgba(177,77,255,0.15)]">
                             <i className="ph-bold ph-rocket text-[48px] text-[#b14dff]"></i>
                         </div>
-                        <h2 className="text-[32px] md:text-[38px] lg:text-[42px] font-bold leading-[1.15] tracking-tight">
+                        <h2 className="text-[26px] sm:text-[32px] md:text-[38px] lg:text-[42px] font-bold leading-[1.15] tracking-tight">
                             <span className="block text-white mb-1">You Focus on Closing Deals.</span>
                             <span className="block bg-gradient-to-r from-[#b14dff] to-[#4f7cff] bg-clip-text text-transparent">
                                 We Focus on Filling Your Pipeline.

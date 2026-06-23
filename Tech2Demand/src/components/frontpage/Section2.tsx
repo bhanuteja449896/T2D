@@ -15,11 +15,11 @@ const Section2: React.FC = () => {
             </div>
 
             {/* MAIN CONTENT CONTAINER */}
-            <main className="w-full px-6 md:px-[60px] lg:px-[100px] py-20 relative z-10">
+            <main className="w-full px-4 sm:px-6 md:px-[60px] lg:px-[100px] py-12 md:py-20 relative z-10">
                 
                 {/* Heading Section */}
                 <Reveal className="flex flex-col md:flex-row items-start md:items-center justify-between mb-8 gap-6">
-                    <h2 className="text-[40px] md:text-[48px] font-extrabold tracking-tight">
+                    <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-extrabold tracking-tight">
                         Why <span className="text-theme-purple">FunnL</span>
                     </h2>
                     <button className="px-6 py-3 rounded-full border border-theme-purple-border hover:bg-theme-purple-border/20 transition-colors text-white font-semibold text-[14px] flex items-center gap-2 group">
@@ -121,7 +121,7 @@ const Section2: React.FC = () => {
                 </StaggerContainer>
 
                 {/* Bottom Strip Container */}
-                <Reveal className="mt-8 border border-[#4C1D95] bg-strip rounded-[16px] p-6 lg:px-8 lg:py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-center shadow-[0_0_30px_rgba(138,43,226,0.1)]">
+                <Reveal className="mt-8 border border-[#4C1D95] bg-strip rounded-[16px] p-6 lg:px-8 lg:py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-center shadow-[0_0_30px_rgba(138,43,226,0.1)]">
                     
                     {/* Feature 1 */}
                     <div className="flex items-center gap-4">

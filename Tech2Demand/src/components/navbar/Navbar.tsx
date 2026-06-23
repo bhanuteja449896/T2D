@@ -29,6 +29,13 @@ const Navbar: React.FC = () => {
                         Book Consultation <i className="ph ph-arrow-right font-bold"></i>
                     </button>
                 </div>
+
+                {/* Mobile Menu Icon */}
+                <div className="lg:hidden flex items-center">
+                    <button className="text-darkBlue hover:text-primaryPurple transition-colors p-2">
+                        <i className="ph ph-list text-[32px]"></i>
+                    </button>
+                </div>
             </div>
         </nav>
     );

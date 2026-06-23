@@ -382,3 +382,15 @@
     .process-card { flex: 1 1 100%; }
     .expect-item { flex: 1 1 calc(50% - 1rem); }
 }
+
+@media (max-width: 480px) {
+    .growth-section { padding: 4rem 0 3rem; }
+    .heading-block h1 { font-size: 2.2rem; }
+    .badge-s3 { font-size: 0.8rem; padding: 0.4rem 0.8rem; }
+    .process-card { padding: 1.5rem; }
+    .expect-main { flex-direction: column; text-align: center; align-items: center; }
+    .expect-icon-box { margin-right: 0; margin-bottom: 1rem; }
+    .expect-item { flex: 1 1 100%; }
+    .closing-statement { font-size: 1rem; flex-direction: column; gap: 0.8rem; text-align: center; }
+    .closing-statement i { font-size: 20px; }
+}

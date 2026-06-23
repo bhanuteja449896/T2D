@@ -17,7 +17,7 @@ const Section1: React.FC = () => {
 
 
                 {/* Hero Section */}
-                <div className="flex flex-col xl:flex-row items-center px-6 md:px-[60px] lg:px-[100px] pt-[80px] lg:pt-[80px] pb-[100px]">
+                <div className="flex flex-col xl:flex-row items-center px-4 sm:px-6 md:px-[60px] lg:px-[100px] pt-[80px] lg:pt-[80px] pb-[60px] md:pb-[100px]">
                     
                     {/* Hero Left (Text & CTAs) */}
                     <div className="w-full xl:w-[40%] flex flex-col z-20">
@@ -30,7 +30,7 @@ const Section1: React.FC = () => {
 
                             {/* Main Headline */}
                             <StaggerItem>
-                                <h1 className="font-montserrat font-medium text-[32px] lg:text-[40px] text-darkBlue leading-[1.2] mb-[20px] max-w-[550px] tracking-tight">
+                                <h1 className="font-montserrat font-medium text-[28px] sm:text-[32px] lg:text-[40px] text-darkBlue leading-[1.2] mb-[20px] max-w-[550px] tracking-tight">
                                     We Help You Attract the Right Prospects, <br/>
                                     <span className="bg-clip-text text-transparent bg-text-gradient">Fill Your Pipeline,</span><br/>
                                     <span className="bg-clip-text text-transparent bg-text-gradient">Grow Your Revenue.</span>
@@ -45,7 +45,7 @@ const Section1: React.FC = () => {
                             </StaggerItem>
 
                             {/* Promise Box */}
-                            <StaggerItem className="bg-offWhite rounded-[12px] p-6 max-w-[550px] mb-[24px] flex flex-col sm:flex-row gap-6 border border-gray-100">
+                            <StaggerItem className="bg-offWhite rounded-[12px] p-6 max-w-[550px] mb-[24px] flex flex-col md:flex-row gap-6 border border-gray-100">
                                 <div className="flex items-start gap-3 w-full sm:w-1/2">
                                     <div className="min-w-[24px] h-[24px] rounded-full bg-purple-100 flex items-center justify-center mt-0.5">
                                         <i className="ph-bold ph-target text-primaryPurple text-sm"></i>
@@ -61,11 +61,11 @@ const Section1: React.FC = () => {
                             </StaggerItem>
 
                             {/* Main Buttons */}
-                            <StaggerItem className="flex flex-col sm:flex-row gap-[20px]">
-                                <button className="w-max px-8 h-[60px] rounded-[8px] bg-btn-gradient font-medium text-[16px] text-white flex items-center justify-center gap-2 shadow-xl shadow-purple-500/30 hover:shadow-purple-500/50 transition-all hover:-translate-y-0.5">
+                            <StaggerItem className="flex flex-col sm:flex-row gap-[20px] w-full sm:w-auto">
+                                <button className="w-full sm:w-max px-8 h-[60px] rounded-[8px] bg-btn-gradient font-medium text-[16px] text-white flex items-center justify-center gap-2 shadow-xl shadow-purple-500/30 hover:shadow-purple-500/50 transition-all hover:-translate-y-0.5">
                                     Book Your Free Consultation <i className="ph ph-arrow-right font-bold"></i>
                                 </button>
-                                <button className="w-[220px] h-[60px] rounded-[8px] bg-white border-2 border-primaryPurple font-medium text-[16px] text-primaryPurple flex items-center justify-center gap-2 hover:bg-purple-50 transition-colors">
+                                <button className="w-full sm:w-[220px] h-[60px] rounded-[8px] bg-white border-2 border-primaryPurple font-medium text-[16px] text-primaryPurple flex items-center justify-center gap-2 hover:bg-purple-50 transition-colors">
                                     <i className="ph ph-play-circle text-2xl"></i> See How We Work
                                 </button>
                             </StaggerItem>
@@ -73,7 +73,7 @@ const Section1: React.FC = () => {
                     </div>
 
                     {/* Hero Right (Funnel Visualization Image) */}
-                    <div className="w-full xl:w-[60%] relative mt-[80px] xl:-mt-[60px] xl:translate-x-[40px] flex items-center justify-center min-h-[600px] z-10">
+                    <div className="w-full xl:w-[60%] relative mt-[40px] xl:-mt-[60px] xl:translate-x-[40px] flex items-center justify-center min-h-[auto] md:min-h-[600px] z-10">
                         <Reveal delay={0.2} duration={0.8} yOffset={30}>
                             <img 
                                 src={frontpageSection1Img} 
@@ -85,10 +85,10 @@ const Section1: React.FC = () => {
                 </div>
 
                 {/* Section 4: Trusted By & Features Grid */}
-                <div className="px-6 md:px-[60px] lg:px-[100px] pb-[100px]">
+                <div className="px-4 sm:px-6 md:px-[60px] lg:px-[100px] pb-[60px] md:pb-[100px]">
 
                     {/* Features Grid */}
-                    <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-[30px]">
+                    <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-[30px]">
                         
                         {/* Feature 1 */}
                         <StaggerItem className="flex flex-col">

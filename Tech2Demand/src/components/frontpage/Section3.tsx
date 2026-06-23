@@ -5,7 +5,7 @@ import { ParallaxLayer, Reveal, StaggerContainer, StaggerItem } from '../animati
 const Section3: React.FC = () => {
     return (
         <section className="growth-section">
-            <div className="w-full px-6 md:px-[60px] lg:px-[100px]">
+            <div className="w-full px-4 sm:px-6 md:px-[60px] lg:px-[100px]">
                 <StaggerContainer className="top-content">
                     <StaggerItem className="heading-block">
                         <div className="badge-s3">
