@@ -1,9 +1,0 @@
-.homepage-section-3-bg {
-    background-color: #f6f8fb;
-    background-image: radial-gradient(circle at 30% 50%, rgba(220, 230, 245, 0.6) 0%, transparent 60%),
-                      radial-gradient(circle at 70% 80%, rgba(220, 230, 245, 0.4) 0%, transparent 50%);
-}
-
-.icon-node {
-    transform: translate(-50%, -50%);
-}

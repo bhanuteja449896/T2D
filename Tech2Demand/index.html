@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tech2demand</title>
     <!-- Fonts and Icons for HomepageSection1 -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Phosphor Icons (for modern line icons) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
     <!-- Tailwind CSS (via CDN to avoid terminal commands) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -17,6 +20,8 @@
                 extend: {
                     fontFamily: {
                         sans: ['Inter', 'sans-serif'],
+                        montserrat: ['Montserrat', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif'],
                     },
                     colors: {
                         navy: {
@@ -27,19 +32,57 @@
                         lightbg: '#E6EAF2',
                         pagebg: '#F5F7FA',
                         brand: {
-                            bg: '#f5f7fa',        /* Very light gray/blue background */
-                            dark: '#141b2d',      /* Deep navy for headings */
-                            gray: '#4a5568',      /* Paragraph text */
-                            lightGray: '#828fa3', /* Eyebrow text */
-                            accent: '#3b82f6',    /* Bright blue for icons */
+                            bg: '#f5f7fa',
+                            dark: '#0A1133',
+                            gray: '#4B5563',
+                            lightGray: '#828fa3',
+                            lightgray: '#9CA3AF',
+                            accent: '#3b82f6',
                             accentDark: '#2563eb',
-                            box: '#1a2238',       /* Dark central box */
-                        }
+                            box: '#1a2238',
+                            blue: '#3C46FF',
+                        },
+                        accent: {
+                            purple: '#8A2BE2',
+                            green: '#00C853',
+                            cyan: '#00B0FF',
+                        },
+                        surface: '#F3F4F6',
+                        darkBlue: '#0A0E2B',
+                        primaryPurple: '#6C5DD3',
+                        lightPurpleBg: '#F4F1FD',
+                        darkGrey: '#333333',
+                        mediumGrey: '#555555',
+                        lightGrey: '#888888',
+                        offWhite: '#F9F9F9',
+                        borderGrey: '#A0A3BD',
+                    },
+                    backgroundImage: {
+                        'hero-tint': 'linear-gradient(135deg, #F4F6FF 0%, rgba(255,255,255,0) 100%)',
+                        'btn-gradient': 'linear-gradient(to right, #6C5DD3, #9E00FF)',
+                        'text-gradient': 'linear-gradient(to right, #6C5DD3, #3498DB)',
+                        'funnel-1': 'linear-gradient(to right, #8E44AD, #6C5DD3)',
+                        'funnel-2': 'linear-gradient(to right, #2980B9, #3498DB)',
+                        'funnel-3': 'linear-gradient(to right, #1ABC9C, #2ECC71)',
+                        'funnel-4': 'linear-gradient(to right, #27AE60, #2ECC71)',
                     },
                     boxShadow: {
                         'float': '0 10px 25px -5px rgba(59, 130, 246, 0.3)',
                         'float-dark': '0 10px 25px -5px rgba(20, 27, 45, 0.4)',
                         'center-box': '0 25px 50px -12px rgba(20, 27, 45, 0.5)',
+                        'soft-large': '0 20px 40px rgba(0, 0, 0, 0.08)',
+                        'btn-primary': '0 4px 12px rgba(60, 70, 255, 0.25)',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-delayed': 'float 6s ease-in-out 3s infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
                     }
                 }
             }

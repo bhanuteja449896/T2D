@@ -1,0 +1,20 @@
+/* Base typography adjustments */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Trapezoid Shapes for Funnel */
+.trapezoid-1 { clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%); }
+.trapezoid-2 { clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%); }
+.trapezoid-3 { clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%); }
+.trapezoid-4 { clip-path: polygon(0 0, 100% 0, 60% 100%, 40% 100%); }
+
+/* Dashed curved lines approximation */
+.dashed-line {
+    position: absolute;
+    border-top: 2px dashed #CBD5E1;
+    border-radius: 50%;
+    height: 100px;
+    z-index: 0;
+}
