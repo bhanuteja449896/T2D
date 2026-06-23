@@ -1,6 +1,6 @@
 import React from 'react';
 import './Section3.css';
-import { ParallaxLayer, Reveal, StaggerContainer, StaggerItem } from '../animations/Animations';
+import { Reveal, StaggerContainer, StaggerItem } from '../animations/Animations';
 
 const Section3: React.FC = () => {
     return (
