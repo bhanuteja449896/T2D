@@ -19,7 +19,7 @@ function useIsMobile() {
 
 // --- Parallax Layer ---
 interface ParallaxLayerProps {
-    children: React.ReactNode;
+    children?: React.ReactNode;
     offset?: number;
     className?: string;
     speed?: number; // 1 is normal, < 1 is slower, > 1 is faster
