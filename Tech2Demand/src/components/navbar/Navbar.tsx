@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar: React.FC = () => {
     return (
-        <nav className="fixed top-0 left-0 w-full h-[100px] bg-white/95 backdrop-blur-md z-[100] shadow-sm border-b border-gray-100 flex justify-center transition-all duration-300">
+        <nav className="fixed top-0 left-0 w-full h-[80px] bg-white/95 backdrop-blur-md z-[100] shadow-sm border-b border-gray-100 flex justify-center transition-all duration-300">
             <div className="w-full flex justify-between items-center px-6 md:px-[60px] lg:px-[100px] h-full">
                 {/* Logo */}
                 <div className="flex items-baseline cursor-pointer">

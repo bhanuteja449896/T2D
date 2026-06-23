@@ -15,61 +15,61 @@ const Section1: React.FC = () => {
 
 
                 {/* Hero Section */}
-                <div className="flex flex-col xl:flex-row items-center px-6 md:px-[60px] lg:px-[100px] pt-[80px] lg:pt-[150px] pb-[100px]">
+                <div className="flex flex-col xl:flex-row items-center px-6 md:px-[60px] lg:px-[100px] pt-[80px] lg:pt-[80px] pb-[100px]">
                     
                     {/* Hero Left (Text & CTAs) */}
                     <div className="w-full xl:w-[40%] flex flex-col z-20">
                         {/* Tagline Pill */}
-                        <div className="flex items-center gap-2 bg-lightPurpleBg px-4 py-2 rounded-full w-max mb-[30px] border border-purple-100">
+                        <div className="flex items-center gap-2 bg-lightPurpleBg px-4 py-2 rounded-full w-max mb-[30px] border border-purple-100 relative top-[15px]">
                             <i className="ph-fill ph-shield-star text-primaryPurple text-lg"></i>
                             <span className="font-medium text-[14px] text-primaryPurple">Your Growth. Our Commitment.</span>
                         </div>
 
                         {/* Main Headline */}
-                        <h1 className="font-montserrat font-extrabold text-[36px] lg:text-[48px] text-darkBlue leading-[1.1] mb-[30px] max-w-[650px] tracking-tight">
+                        <h1 className="font-montserrat font-medium text-[32px] lg:text-[40px] text-darkBlue leading-[1.2] mb-[20px] max-w-[550px] tracking-tight">
                             We Help You Attract the Right Prospects, <br/>
                             <span className="bg-clip-text text-transparent bg-text-gradient">Fill Your Pipeline,</span><br/>
                             <span className="bg-clip-text text-transparent bg-text-gradient">Grow Your Revenue.</span>
                         </h1>
 
                         {/* Subheadline */}
-                        <p className="font-normal text-[16px] text-mediumGrey leading-[1.6] mb-[40px] max-w-[550px]">
-                            We connect you with decision-makers who are actively looking for your solutions. Stop chasing unqualified leads and start closing high-value deals with our proven B2B growth engine.
+                        <p className="font-normal text-[16px] text-mediumGrey leading-[1.6] mb-[24px] max-w-[550px]">
+                            We connect you with decision-makers, book qualified meetings, and build sales pipelines that drive predictable revenue growth. Our strategies are designed to deliver real results and up to 5X ROI.
                         </p>
 
                         {/* Promise Box */}
-                        <div className="bg-offWhite rounded-[12px] p-6 max-w-[550px] mb-[40px] flex flex-col sm:flex-row gap-6 border border-gray-100">
+                        <div className="bg-offWhite rounded-[12px] p-6 max-w-[550px] mb-[24px] flex flex-col sm:flex-row gap-6 border border-gray-100">
                             <div className="flex items-start gap-3 w-full sm:w-1/2">
-                                <div className="min-w-[24px] h-[24px] rounded-full bg-green-100 flex items-center justify-center mt-0.5">
-                                    <i className="ph-bold ph-check text-green-600 text-sm"></i>
+                                <div className="min-w-[24px] h-[24px] rounded-full bg-purple-100 flex items-center justify-center mt-0.5">
+                                    <i className="ph-bold ph-target text-primaryPurple text-sm"></i>
                                 </div>
-                                <p className="text-[14px] leading-snug"><span className="font-semibold text-darkBlue">Guaranteed Leads.</span><br/>Or we work for free.</p>
+                                <p className="text-[14px] leading-snug"><span className="font-semibold text-darkBlue">We promise to show revenue growth</span><br/>for your sales pipeline.</p>
                             </div>
                             <div className="flex items-start gap-3 w-full sm:w-1/2">
-                                <div className="min-w-[24px] h-[24px] rounded-full bg-green-100 flex items-center justify-center mt-0.5">
-                                    <i className="ph-bold ph-check text-green-600 text-sm"></i>
+                                <div className="min-w-[24px] h-[24px] rounded-full bg-purple-100 flex items-center justify-center mt-0.5">
+                                    <i className="ph-bold ph-check text-primaryPurple text-sm"></i>
                                 </div>
-                                <p className="text-[14px] leading-snug"><span className="font-semibold text-darkBlue">Data-Driven Approach.</span><br/>Optimized for conversion.</p>
+                                <p className="text-[14px] leading-snug"><span className="font-semibold text-darkBlue">We're not just talk –</span><br/>We show real results.</p>
                             </div>
                         </div>
 
                         {/* Main Buttons */}
                         <div className="flex flex-col sm:flex-row gap-[20px]">
-                            <button className="w-[280px] h-[60px] rounded-[8px] bg-btn-gradient font-bold text-[18px] text-white flex items-center justify-center gap-2 shadow-xl shadow-purple-500/30 hover:shadow-purple-500/50 transition-all hover:-translate-y-0.5">
-                                Get Started Today
+                            <button className="w-max px-8 h-[60px] rounded-[8px] bg-btn-gradient font-medium text-[16px] text-white flex items-center justify-center gap-2 shadow-xl shadow-purple-500/30 hover:shadow-purple-500/50 transition-all hover:-translate-y-0.5">
+                                Book Your Free Consultation <i className="ph ph-arrow-right font-bold"></i>
                             </button>
-                            <button className="w-[220px] h-[60px] rounded-[8px] bg-white border-2 border-primaryPurple font-bold text-[18px] text-primaryPurple flex items-center justify-center gap-2 hover:bg-purple-50 transition-colors">
-                                <i className="ph ph-play-circle text-2xl"></i> See How It Works
+                            <button className="w-[220px] h-[60px] rounded-[8px] bg-white border-2 border-primaryPurple font-medium text-[16px] text-primaryPurple flex items-center justify-center gap-2 hover:bg-purple-50 transition-colors">
+                                <i className="ph ph-play-circle text-2xl"></i> See How We Work
                             </button>
                         </div>
                     </div>
 
                     {/* Hero Right (Funnel Visualization Image) */}
-                    <div className="w-full xl:w-[60%] relative mt-[80px] xl:mt-0 flex items-center justify-center min-h-[600px] z-10">
+                    <div className="w-full xl:w-[60%] relative mt-[80px] xl:-mt-[60px] xl:translate-x-[40px] flex items-center justify-center min-h-[600px] z-10">
                         <img 
                             src={frontpageSection1Img} 
                             alt="Funnel Visualization" 
-                            className="w-full h-auto object-contain max-w-[800px] xl:max-w-[100%]"
+                            className="w-full h-auto object-contain max-w-[800px] xl:max-w-[100%] scale-105 xl:scale-110"
                         />
                     </div>
                 </div>
