@@ -1,40 +1,41 @@
 import React from 'react';
 import './Section3.css';
+import { ParallaxLayer, Reveal, StaggerContainer, StaggerItem } from '../animations/Animations';
 
 const Section3: React.FC = () => {
     return (
         <section className="growth-section">
             <div className="w-full px-6 md:px-[60px] lg:px-[100px]">
-                <div className="top-content">
-                    <div className="heading-block">
+                <StaggerContainer className="top-content">
+                    <StaggerItem className="heading-block">
                         <div className="badge-s3">
                             <span>&#10022;</span> OUR PROVEN PROCESS
                         </div>
                         <h1>The <span>Funnl</span> Growth Framework</h1>
                         <p className="supporting-text">A proven 4-step process to attract the right prospects, generate qualified meetings, and build a predictable pipeline that drives revenue growth.</p>
-                    </div>
-                    <div className="cta-block">
+                    </StaggerItem>
+                    <StaggerItem className="cta-block">
                         <a href="#" className="cta-button">Book Your Free Consultation <span>&rarr;</span></a>
                         <br/>
                         <div className="cta-note">
                             <i className="ph-bold ph-shield-check"></i>
                             No obligation. Just growth.
                         </div>
-                    </div>
-                </div>
+                    </StaggerItem>
+                </StaggerContainer>
 
-                <div className="process-cards-wrapper">
-                    <div className="connector c1">
+                <StaggerContainer className="process-cards-wrapper">
+                    <Reveal delay={0.4} yOffset={0} className="connector c1">
                         <i className="ph-bold ph-caret-right"></i>
-                    </div>
-                    <div className="connector c2">
+                    </Reveal>
+                    <Reveal delay={0.6} yOffset={0} className="connector c2">
                         <i className="ph-bold ph-caret-right"></i>
-                    </div>
-                    <div className="connector c3">
+                    </Reveal>
+                    <Reveal delay={0.8} yOffset={0} className="connector c3">
                         <i className="ph-bold ph-caret-right"></i>
-                    </div>
+                    </Reveal>
 
-                    <div className="process-card card-1">
+                    <StaggerItem className="process-card card-1">
                         <div className="card-header">
                             <div className="card-icon">
                                 <i className="ph-bold ph-magnifying-glass"></i>
@@ -47,9 +48,9 @@ const Section3: React.FC = () => {
                         <div className="card-dots">
                             <div className="dot"></div><div className="dot"></div><div className="dot"></div><div className="dot"></div>
                         </div>
-                    </div>
+                    </StaggerItem>
 
-                    <div className="process-card card-2">
+                    <StaggerItem className="process-card card-2">
                         <div className="card-header">
                             <div className="card-icon">
                                 <i className="ph-bold ph-paper-plane-right"></i>
@@ -62,9 +63,9 @@ const Section3: React.FC = () => {
                         <div className="card-dots">
                             <div className="dot"></div><div className="dot"></div><div className="dot"></div><div className="dot"></div>
                         </div>
-                    </div>
+                    </StaggerItem>
 
-                    <div className="process-card card-3">
+                    <StaggerItem className="process-card card-3">
                         <div className="card-header">
                             <div className="card-icon">
                                 <i className="ph-bold ph-user-plus"></i>
@@ -77,9 +78,9 @@ const Section3: React.FC = () => {
                         <div className="card-dots">
                             <div className="dot"></div><div className="dot"></div><div className="dot"></div><div className="dot"></div>
                         </div>
-                    </div>
+                    </StaggerItem>
 
-                    <div className="process-card card-4">
+                    <StaggerItem className="process-card card-4">
                         <div className="card-header">
                             <div className="card-icon">
                                 <i className="ph-bold ph-chart-bar"></i>
@@ -92,10 +93,10 @@ const Section3: React.FC = () => {
                         <div className="card-dots">
                             <div className="dot"></div><div className="dot"></div><div className="dot"></div><div className="dot"></div>
                         </div>
-                    </div>
-                </div>
+                    </StaggerItem>
+                </StaggerContainer>
 
-                <div className="expectation-strip">
+                <Reveal className="expectation-strip">
                     <div className="expect-main">
                         <div className="expect-icon-box">
                             <i className="ph-bold ph-target"></i>
@@ -143,13 +144,13 @@ const Section3: React.FC = () => {
                             <div className="expect-item-title">Up to 5X ROI</div>
                         </div>
                     </div>
-                </div>
+                </Reveal>
 
-                <div className="closing-statement">
+                <Reveal delay={0.2} className="closing-statement">
                     <i className="ph-fill ph-star"></i>
                     <span>From First Conversation to Revenue Growth — Funnl Helps You Build a Growth Engine That Scales.</span>
                     <i className="ph-fill ph-star"></i>
-                </div>
+                </Reveal>
 
             </div>
         </section>

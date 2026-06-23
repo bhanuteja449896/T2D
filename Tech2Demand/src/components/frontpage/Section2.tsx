@@ -1,23 +1,24 @@
 import React from 'react';
 import './Section2.css';
+import { ParallaxLayer, Reveal, StaggerContainer, StaggerItem } from '../animations/Animations';
 
 const Section2: React.FC = () => {
     return (
         <section className="relative min-h-screen bg-base text-white overflow-hidden font-sans">
             {/* Background Artwork */}
             <div className="bg-effects-s2">
-                <div className="glow-orb-s2"></div>
-                <div className="ring-s2 ring-1-s2"></div>
-                <div className="ring-s2 ring-2-s2"></div>
-                <div className="ring-s2 ring-3-s2"></div>
-                <div className="ring-s2 ring-4-s2"></div>
+                <ParallaxLayer offset={40} speed={0.4} className="glow-orb-s2"></ParallaxLayer>
+                <ParallaxLayer offset={20} speed={0.6} className="ring-s2 ring-1-s2"></ParallaxLayer>
+                <ParallaxLayer offset={30} speed={0.5} className="ring-s2 ring-2-s2"></ParallaxLayer>
+                <ParallaxLayer offset={15} speed={0.7} className="ring-s2 ring-3-s2"></ParallaxLayer>
+                <ParallaxLayer offset={25} speed={0.6} className="ring-s2 ring-4-s2"></ParallaxLayer>
             </div>
 
             {/* MAIN CONTENT CONTAINER */}
             <main className="w-full px-6 md:px-[60px] lg:px-[100px] py-20 relative z-10">
                 
                 {/* Heading Section */}
-                <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-8 gap-6">
+                <Reveal className="flex flex-col md:flex-row items-start md:items-center justify-between mb-8 gap-6">
                     <h2 className="text-[40px] md:text-[48px] font-extrabold tracking-tight">
                         Why <span className="text-theme-purple">FunnL</span>
                     </h2>
@@ -25,13 +26,13 @@ const Section2: React.FC = () => {
                         Book Your Free Consultation 
                         <i className="ph-bold ph-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
                     </button>
-                </div>
+                </Reveal>
 
                 {/* 3 Cards Row Grid */}
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <StaggerContainer className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                     
                     {/* Card 1: Purple Theme */}
-                    <div className="flex flex-col bg-card border border-theme-purple-border rounded-[16px] p-8 h-full transition-transform hover:-translate-y-1 duration-300 shadow-lg shadow-theme-purple-border/5">
+                    <StaggerItem className="flex flex-col bg-card border border-theme-purple-border rounded-[16px] p-8 h-full transition-transform hover:-translate-y-1 duration-300 shadow-lg shadow-theme-purple-border/5">
                         <div className="flex items-center gap-4 mb-6">
                             <div className="w-16 h-16 shrink-0 rounded-full border border-theme-purple-border flex items-center justify-center text-theme-purple">
                                 <i className="ph-bold ph-rocket text-3xl"></i>
@@ -57,10 +58,10 @@ const Section2: React.FC = () => {
                                 <p className="text-white text-[14px] font-bold">Your Growth.</p>
                             </div>
                         </div>
-                    </div>
+                    </StaggerItem>
 
                     {/* Card 2: Blue Theme */}
-                    <div className="flex flex-col bg-card border border-theme-blue-border rounded-[16px] p-8 h-full transition-transform hover:-translate-y-1 duration-300 shadow-lg shadow-theme-blue-border/5">
+                    <StaggerItem className="flex flex-col bg-card border border-theme-blue-border rounded-[16px] p-8 h-full transition-transform hover:-translate-y-1 duration-300 shadow-lg shadow-theme-blue-border/5">
                         <div className="flex items-center gap-4 mb-6">
                             <div className="w-16 h-16 shrink-0 rounded-full border border-theme-blue-border flex items-center justify-center text-theme-blue-text">
                                 <i className="ph-bold ph-sliders text-3xl"></i>
@@ -86,10 +87,10 @@ const Section2: React.FC = () => {
                                 <p className="text-white text-[14px] font-bold">Right Results.</p>
                             </div>
                         </div>
-                    </div>
+                    </StaggerItem>
 
                     {/* Card 3: Teal Theme */}
-                    <div className="flex flex-col bg-card border border-theme-teal-border rounded-[16px] p-8 h-full transition-transform hover:-translate-y-1 duration-300 shadow-lg shadow-theme-teal-border/5">
+                    <StaggerItem className="flex flex-col bg-card border border-theme-teal-border rounded-[16px] p-8 h-full transition-transform hover:-translate-y-1 duration-300 shadow-lg shadow-theme-teal-border/5">
                         <div className="flex items-center gap-4 mb-6">
                             <div className="w-16 h-16 shrink-0 rounded-full border border-theme-teal-border flex items-center justify-center text-theme-teal-text">
                                 <i className="ph-bold ph-shield text-3xl"></i>
@@ -115,12 +116,12 @@ const Section2: React.FC = () => {
                                 <p className="text-white text-[14px] font-bold">Long-term Growth.</p>
                             </div>
                         </div>
-                    </div>
+                    </StaggerItem>
 
-                </div>
+                </StaggerContainer>
 
                 {/* Bottom Strip Container */}
-                <div className="mt-8 border border-[#4C1D95] bg-strip rounded-[16px] p-6 lg:px-8 lg:py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-center shadow-[0_0_30px_rgba(138,43,226,0.1)]">
+                <Reveal className="mt-8 border border-[#4C1D95] bg-strip rounded-[16px] p-6 lg:px-8 lg:py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-center shadow-[0_0_30px_rgba(138,43,226,0.1)]">
                     
                     {/* Feature 1 */}
                     <div className="flex items-center gap-4">
@@ -166,7 +167,7 @@ const Section2: React.FC = () => {
                         </div>
                     </div>
 
-                </div>
+                </Reveal>
 
             </main>
         </section>
