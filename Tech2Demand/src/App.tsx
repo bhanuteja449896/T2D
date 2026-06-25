@@ -5,6 +5,7 @@ import Section3 from "./components/frontpage/Section3";
 import Section4 from "./components/frontpage/Section4";
 import Navbar from "./components/navbar/Navbar";
 import ServicesSection1 from "./components/services/Section1";
+import ServicesSection2 from "./components/services/Section2";
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -23,6 +24,7 @@ function App() {
       {currentPage === 'services' && (
         <>
           <ServicesSection1 />
+          <ServicesSection2 />
         </>
       )}
     </>
