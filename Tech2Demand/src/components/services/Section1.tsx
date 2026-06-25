@@ -11,26 +11,26 @@ const Section1: React.FC = () => {
             </ParallaxLayer>
 
             {/* MAIN WRAPPER: Starts directly below where a navbar would be */}
-            <main className="relative z-10 w-full pt-[120px] lg:pt-[160px] pb-24">
+            <main className="relative z-10 w-full">
                 
                 {/* Aligned to frontpage: px-4 sm:px-6 md:px-[60px] lg:px-[100px] */}
-                <div className="px-4 sm:px-6 md:px-[60px] lg:px-[100px] flex flex-col lg:flex-row items-center gap-16 lg:gap-8">
+                <div className="flex flex-col xl:flex-row items-center px-4 sm:px-6 md:px-[60px] lg:px-[100px] pt-[80px] lg:pt-[80px] pb-10 md:pb-12">
                     
                     {/* === LEFT COLUMN: Content === */}
-                    <div className="flex-1 w-full flex flex-col items-start pt-8 z-20">
+                    <div className="w-full xl:w-[40%] flex flex-col z-20">
                         <StaggerContainer>
                             {/* Badge */}
-                            <StaggerItem className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#b357ff]/10 border border-[#9b46ff]/30 mb-8 shadow-[0_0_15px_rgba(155,70,255,0.15)]">
-                                <i className="ph ph-sparkles w-4 h-4 text-[#b357ff]"></i>
-                                <span className="text-[14px] md:text-[15px] font-semibold text-[#b357ff] tracking-wide uppercase">
+                            <StaggerItem className="inline-flex items-center gap-2 px-4 py-2 rounded-full w-max bg-[#b357ff]/10 border border-[#9b46ff]/30 mb-[30px] relative top-[15px] shadow-[0_0_15px_rgba(155,70,255,0.15)]">
+                                <i className="ph ph-sparkles text-[#b357ff] text-lg"></i>
+                                <span className="font-medium text-[14px] text-[#b357ff] tracking-wide">
                                     Growth Solutions That Drive Results
                                 </span>
                             </StaggerItem>
 
                             {/* Main Heading */}
                             <StaggerItem>
-                                <h1 className="text-[40px] sm:text-[60px] md:text-[76px] lg:text-[84px] leading-[1.05] font-bold tracking-tight mb-8">
-                                    <span className="block text-[#f3f4f7]">More Qualified<br/>Meetings.</span>
+                                <h1 className="font-montserrat font-medium text-[28px] sm:text-[32px] lg:text-[40px] text-[#f3f4f7] leading-[1.2] mb-[20px] max-w-[550px] tracking-tight">
+                                    <span className="block">More Qualified<br/>Meetings.</span>
                                     <span className="block bg-gradient-to-r from-[#b357ff] via-[#8a5dfa] to-[#4d7fff] bg-clip-text text-transparent pb-2 mt-1">
                                         More Pipeline.<br/>More Revenue.
                                     </span>
@@ -39,63 +39,56 @@ const Section1: React.FC = () => {
 
                             {/* Paragraph */}
                             <StaggerItem>
-                                <p className="text-[16px] sm:text-[19px] md:text-[21px] leading-[1.6] text-[#d0d6e3] max-w-2xl font-medium mb-12">
-                                    We help B2B companies attract the right prospects,<br className="hidden md:block"/>
-                                    engage decision-makers, and build predictable<br className="hidden md:block"/>
+                                <p className="font-normal text-[16px] text-[#d0d6e3] leading-[1.6] mb-[24px] max-w-[550px]">
+                                    We help B2B companies attract the right prospects,
+                                    engage decision-makers, and build predictable
                                     pipelines that drive sustainable growth.
                                 </p>
                             </StaggerItem>
 
                             {/* Mini Benefit Row */}
-                            <StaggerItem className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-8 mb-14 w-full">
-                                <div className="flex items-center gap-3">
-                                    <div className="w-10 h-10 rounded-full border border-[#b357ff]/40 flex items-center justify-center bg-[#b357ff]/5 shadow-[0_0_10px_rgba(155,70,255,0.1)]">
-                                        <i className="ph ph-target w-5 h-5 text-[#b357ff]"></i>
+                            <StaggerItem className="flex flex-col sm:flex-row items-start sm:items-center gap-[24px] mb-[24px] max-w-[550px] w-full bg-[#0d1126] rounded-[12px] p-6 border border-white/5">
+                                <div className="flex items-start gap-3 w-full sm:w-1/3">
+                                    <div className="min-w-[24px] h-[24px] rounded-full bg-[#b357ff]/20 flex items-center justify-center mt-0.5">
+                                        <i className="ph-bold ph-target text-[#b357ff] text-sm"></i>
                                     </div>
-                                    <span className="text-[16px] md:text-[17px] font-medium text-[#f3f4f7] leading-tight">
-                                        Target the<br/>Right Buyers
-                                    </span>
+                                    <p className="text-[14px] leading-snug text-[#d0d6e3]">
+                                        <span className="font-semibold text-white">Target the</span><br/>Right Buyers
+                                    </p>
                                 </div>
-
-                                <div className="hidden sm:block w-px h-10 bg-white/10"></div>
-
-                                <div className="flex items-center gap-3">
-                                    <div className="w-10 h-10 rounded-full border border-[#b357ff]/40 flex items-center justify-center bg-[#b357ff]/5 shadow-[0_0_10px_rgba(155,70,255,0.1)]">
-                                        <i className="ph ph-calendar w-5 h-5 text-[#b357ff]"></i>
+                                <div className="flex items-start gap-3 w-full sm:w-1/3">
+                                    <div className="min-w-[24px] h-[24px] rounded-full bg-[#b357ff]/20 flex items-center justify-center mt-0.5">
+                                        <i className="ph-bold ph-calendar text-[#b357ff] text-sm"></i>
                                     </div>
-                                    <span className="text-[16px] md:text-[17px] font-medium text-[#f3f4f7] leading-tight">
-                                        Book More<br/>Qualified Meetings
-                                    </span>
+                                    <p className="text-[14px] leading-snug text-[#d0d6e3]">
+                                        <span className="font-semibold text-white">Book More</span><br/>Qualified Meetings
+                                    </p>
                                 </div>
-
-                                <div className="hidden sm:block w-px h-10 bg-white/10"></div>
-
-                                <div className="flex items-center gap-3">
-                                    <div className="w-10 h-10 rounded-full border border-[#b357ff]/40 flex items-center justify-center bg-[#b357ff]/5 shadow-[0_0_10px_rgba(155,70,255,0.1)]">
-                                        <i className="ph ph-chart-bar w-5 h-5 text-[#b357ff]"></i>
+                                <div className="flex items-start gap-3 w-full sm:w-1/3">
+                                    <div className="min-w-[24px] h-[24px] rounded-full bg-[#b357ff]/20 flex items-center justify-center mt-0.5">
+                                        <i className="ph-bold ph-chart-bar text-[#b357ff] text-sm"></i>
                                     </div>
-                                    <span className="text-[16px] md:text-[17px] font-medium text-[#f3f4f7] leading-tight">
-                                        Create Predictable<br/>Pipeline Growth
-                                    </span>
+                                    <p className="text-[14px] leading-snug text-[#d0d6e3]">
+                                        <span className="font-semibold text-white">Create Predictable</span><br/>Pipeline Growth
+                                    </p>
                                 </div>
                             </StaggerItem>
 
                             {/* CTA Buttons */}
-                            <StaggerItem className="flex flex-col sm:flex-row items-center gap-5 w-full sm:w-auto">
-                                <button className="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-[#8b3dff] to-[#5b4eff] text-white font-semibold text-[16px] sm:text-[18px] flex items-center justify-center gap-3 shadow-[0_0_30px_rgba(139,61,255,0.4)] transition-transform hover:scale-[1.02]">
-                                    Book Your Free Growth Consultation
-                                    <i className="ph ph-arrow-right w-5 h-5"></i>
+                            <StaggerItem className="flex flex-col sm:flex-row gap-[20px] w-full sm:w-auto">
+                                <button className="w-full sm:w-max px-8 h-[60px] rounded-[8px] bg-gradient-to-r from-[#8b3dff] to-[#5b4eff] font-medium text-[16px] text-white flex items-center justify-center gap-2 shadow-[0_0_30px_rgba(139,61,255,0.4)] hover:shadow-[0_0_30px_rgba(139,61,255,0.6)] transition-all hover:-translate-y-0.5">
+                                    Book Your Free Growth Consultation <i className="ph ph-arrow-right font-bold"></i>
                                 </button>
                                 
-                                <button className="w-full sm:w-auto px-8 py-4 rounded-full border border-white/20 bg-white/5 text-white font-semibold text-[16px] sm:text-[18px] flex items-center justify-center transition-colors hover:bg-white/10">
-                                    View All Services
+                                <button className="w-full sm:w-[220px] h-[60px] rounded-[8px] bg-transparent border-2 border-[#b357ff] font-medium text-[16px] text-[#b357ff] flex items-center justify-center gap-2 hover:bg-[#b357ff]/10 transition-colors">
+                                    <i className="ph ph-squares-four text-2xl"></i> View All Services
                                 </button>
                             </StaggerItem>
                         </StaggerContainer>
                     </div>
 
                     {/* === RIGHT COLUMN: Media & Dashboard Visual === */}
-                    <div className="w-full lg:w-[55%] relative mt-12 lg:mt-0 z-10">
+                    <div className="w-full xl:w-[55%] relative mt-12 xl:mt-0 z-10 xl:ml-auto xl:pl-10">
                         <Reveal delay={0.2} duration={0.8} yOffset={40}>
                             {/* The Media Container */}
                             <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-[#03040a] border border-white/5 shadow-[0_0_50px_rgba(155,70,255,0.15)] flex items-center justify-center">
@@ -207,8 +200,10 @@ const Section1: React.FC = () => {
                     </div>
                 </div>
 
+
+
                 {/* === LOWER SECTION: Title & Divider === */}
-                <div className="px-4 sm:px-6 md:px-[60px] lg:px-[100px] mt-20 lg:mt-32 mb-16">
+                <div className="px-4 sm:px-6 md:px-[60px] lg:px-[100px] mt-8 lg:mt-8 mb-16">
                     <Reveal yOffset={20}>
                         {/* Title Row with lines */}
                         <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-6">
@@ -233,7 +228,7 @@ const Section1: React.FC = () => {
                 </div>
 
                 {/* === LOWER SECTION: 4-Card Grid === */}
-                <div className="px-4 sm:px-6 md:px-[60px] lg:px-[100px] relative z-10">
+                <div className="px-4 sm:px-6 md:px-[60px] lg:px-[100px] relative z-10 pb-20">
                     <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         
                         {/* Card 1: Qualified Meeting Generation */}
@@ -302,7 +297,6 @@ const Section1: React.FC = () => {
 
                     </StaggerContainer>
                 </div>
-
             </main>
         </div>
     );
