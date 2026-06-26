@@ -6,6 +6,8 @@ import Section4 from "./components/frontpage/Section4";
 import Navbar from "./components/navbar/Navbar";
 import ServicesSection1 from "./components/services/Section1";
 import ServicesSection2 from "./components/services/Section2";
+import Footer from "./components/footer/Footer";
+import TalkToUs from "./components/talktous/TalkToUs";
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -27,6 +29,10 @@ function App() {
           <ServicesSection2 />
         </>
       )}
+      {currentPage === 'talk' && (
+        <TalkToUs />
+      )}
+      <Footer />
     </>
   );
 }

@@ -125,7 +125,7 @@ const Section1: React.FC = () => {
                                         <div className="bg-[#050714]/80 rounded-lg border border-white/5 p-4 flex flex-col justify-between">
                                             <div>
                                                 <h4 className="text-[12px] text-[#d0d6e3] uppercase tracking-wider mb-1">Qualified Meetings</h4>
-                                                <div className="text-xl sm:text-3xl font-bold text-white">120</div>
+                                                <div className="text-xl sm:text-3xl font-bold text-white">80+</div>
                                                 <div className="text-[11px] text-green-400 mt-1">↑ 12% vs last month</div>
                                             </div>
                                             {/* Mock Chart */}
@@ -142,7 +142,7 @@ const Section1: React.FC = () => {
                                         <div className="bg-[#050714]/80 rounded-lg border border-white/5 p-4 flex flex-col justify-between">
                                             <div>
                                                 <h4 className="text-[12px] text-[#d0d6e3] uppercase tracking-wider mb-1">Pipeline Created</h4>
-                                                <div className="text-xl sm:text-3xl font-bold text-white">$2.45M</div>
+                                                <div className="text-xl sm:text-3xl font-bold text-white">$1M+</div>
                                             </div>
                                             {/* Mock Line Chart SVG */}
                                             <svg className="w-full h-12 mt-2" viewBox="0 0 100 40" preserveAspectRatio="none">
@@ -177,7 +177,7 @@ const Section1: React.FC = () => {
                                         <div className="bg-[#050714]/80 rounded-lg border border-white/5 p-4 flex flex-col justify-between">
                                             <div>
                                                 <h4 className="text-[12px] text-[#d0d6e3] uppercase tracking-wider mb-1">Opportunities</h4>
-                                                <div className="text-xl sm:text-3xl font-bold text-white">86</div>
+                                                <div className="text-xl sm:text-3xl font-bold text-white">15+</div>
                                                 <div className="text-[11px] text-green-400 mt-1">↑ 5% vs last month</div>
                                             </div>
                                             <div className="flex gap-1 h-8 mt-4 items-end">
@@ -229,7 +229,7 @@ const Section1: React.FC = () => {
 
                 {/* === LOWER SECTION: 4-Card Grid === */}
                 <div className="px-4 sm:px-6 md:px-[60px] lg:px-[100px] relative z-10 pb-20">
-                    <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         
                         {/* Card 1: Qualified Meeting Generation */}
                         <StaggerItem className="bg-[#0d1126] rounded-2xl p-8 border border-white/5 hover:border-[#b357ff]/30 transition-all duration-300 flex flex-col h-full group hover:shadow-[0_10px_30px_rgba(179,87,255,0.08)]">
@@ -259,22 +259,6 @@ const Section1: React.FC = () => {
                                 Multi-channel campaigns that build awareness, generate interest, and create a consistent flow of opportunities.
                             </p>
                             <a href="#" className="text-[16px] sm:text-[18px] font-semibold text-[#21d6c7] flex items-center gap-2 hover:gap-3 transition-all mt-auto w-fit">
-                                Learn more <i className="ph ph-arrow-right w-5 h-5"></i>
-                            </a>
-                        </StaggerItem>
-
-                        {/* Card 3: Video Content Creation */}
-                        <StaggerItem className="bg-[#0d1126] rounded-2xl p-8 border border-white/5 hover:border-[#ff4aa8]/30 transition-all duration-300 flex flex-col h-full group hover:shadow-[0_10px_30px_rgba(255,74,168,0.08)]">
-                            <div className="w-12 h-12 rounded-lg bg-[#ff4aa8]/10 flex items-center justify-center mb-6">
-                                <i className="ph ph-video w-6 h-6 text-[#ff4aa8] group-hover:scale-110 transition-transform text-xl"></i>
-                            </div>
-                            <h3 className="text-[24px] md:text-[28px] lg:text-[32px] font-bold text-white leading-[1.15] mb-4">
-                                Video Content<br/>Creation
-                            </h3>
-                            <p className="text-[16px] sm:text-[17px] text-[#d0d6e3] leading-relaxed mb-8 flex-grow">
-                                High-impact videos that educate, engage, and position your brand as the clear choice.
-                            </p>
-                            <a href="#" className="text-[16px] sm:text-[18px] font-semibold text-[#ff4aa8] flex items-center gap-2 hover:gap-3 transition-all mt-auto w-fit">
                                 Learn more <i className="ph ph-arrow-right w-5 h-5"></i>
                             </a>
                         </StaggerItem>
