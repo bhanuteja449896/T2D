@@ -20,7 +20,7 @@ const Section2: React.FC = () => {
                 {/* Heading Section */}
                 <Reveal className="flex flex-col md:flex-row items-start md:items-center justify-between mb-8 gap-6">
                     <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-extrabold tracking-tight">
-                        Why <span className="text-theme-purple">FunnL</span>
+                        Why <span className="text-theme-purple">Tech2Demand</span>
                     </h2>
                     <button className="px-6 py-3 rounded-full border border-theme-purple-border hover:bg-theme-purple-border/20 transition-colors text-white font-semibold text-[14px] flex items-center gap-2 group">
                         Book Your Free Consultation 
@@ -45,7 +45,7 @@ const Section2: React.FC = () => {
                                 Why manage multiple vendors when one partner can drive your entire growth strategy?
                             </p>
                             <p className="text-textgray text-[15px] leading-relaxed">
-                                Funnl brings together demand generation, content, outbound prospecting, meeting generation, and sales support into one seamless engine. Every activity works together to attract the right prospects, generate qualified meetings, and create predictable pipeline growth.
+                                Tech2Demand brings together demand generation, content, outbound prospecting, meeting generation, and sales support into one seamless engine. Every activity works together to attract the right prospects, generate qualified meetings, and create predictable pipeline growth.
                             </p>
                         </div>
 
@@ -74,7 +74,7 @@ const Section2: React.FC = () => {
                                 Every business grows differently. That's why we offer engagement models designed around your goals.
                             </p>
                             <p className="text-textgray text-[15px] leading-relaxed">
-                                Whether you need qualified meetings, demand generation support, SDR services, or a fully managed growth program, Funnl scales with your business and delivers the resources you need at every stage of growth.
+                                Whether you need qualified meetings, demand generation support, SDR services, or a fully managed growth program, Tech2Demand scales with your business and delivers the resources you need at every stage of growth.
                             </p>
                         </div>
 

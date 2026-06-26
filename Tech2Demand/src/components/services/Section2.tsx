@@ -232,10 +232,10 @@ const Section2: React.FC = () => {
                             {/* Graphic Divider (Vertical on Desktop) */}
                             <div className="hidden xl:block absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-px bg-gradient-to-b from-transparent via-[#b357ff]/40 to-transparent"></div>
                             
-                            {/* Left Column: The Funnl Difference */}
+                            {/* Left Column: The Tech2Demand Difference */}
                             <div>
                                 <div className="mb-8">
-                                    <h2 className="font-montserrat text-[28px] sm:text-[32px] font-bold text-white mb-4">The Funnl Difference</h2>
+                                    <h2 className="font-montserrat text-[28px] sm:text-[32px] font-bold text-white mb-4">The Tech2Demand Difference</h2>
                                     <div className="w-16 h-1 bg-[#b357ff] rounded-full"></div>
                                 </div>
 
@@ -244,7 +244,7 @@ const Section2: React.FC = () => {
                                         Traditional lead generation companies provide contact lists.
                                     </p>
                                     <p className="text-[17px] font-medium text-[#b357ff] border-l-2 border-[#b357ff] pl-4">
-                                        Funnl delivers qualified conversations with decision-makers.
+                                        Tech2Demand delivers qualified conversations with decision-makers.
                                     </p>
                                     <p className="text-[16px] text-[#cfd6e4] leading-relaxed">
                                         We focus on creating opportunities that help your sales team spend less time prospecting and more time selling.

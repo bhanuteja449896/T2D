@@ -11,7 +11,7 @@ const Section3: React.FC = () => {
                         <div className="badge-s3">
                             <span>&#10022;</span> OUR PROVEN PROCESS
                         </div>
-                        <h1>The <span>Funnl</span> Growth Framework</h1>
+                        <h1>The <span>Tech2Demand</span> Growth Framework</h1>
                         <p className="supporting-text">A proven 4-step process to attract the right prospects, generate qualified meetings, and build a predictable pipeline that drives revenue growth.</p>
                     </StaggerItem>
                     <StaggerItem className="cta-block">
@@ -148,7 +148,7 @@ const Section3: React.FC = () => {
 
                 <Reveal delay={0.2} className="closing-statement">
                     <i className="ph-fill ph-star"></i>
-                    <span>From First Conversation to Revenue Growth — Funnl Helps You Build a Growth Engine That Scales.</span>
+                    <span>From First Conversation to Revenue Growth — Tech2Demand Helps You Build a Growth Engine That Scales.</span>
                     <i className="ph-fill ph-star"></i>
                 </Reveal>
 

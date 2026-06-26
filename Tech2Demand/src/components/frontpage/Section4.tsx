@@ -73,7 +73,7 @@ const Section4: React.FC = () => {
                     {/* Supporting Paragraph */}
                     <p className="text-[18px] md:text-[20px] lg:text-[22px] text-[#d3d8e6] max-w-3xl leading-[1.6] font-normal">
                         Stop wasting time on unqualified leads and inconsistent pipeline generation. 
-                        Funnl helps B2B companies connect with decision-makers, generate qualified meetings, 
+                        Tech2Demand helps B2B companies connect with decision-makers, generate qualified meetings, 
                         and build stronger sales pipelines that support long-term growth.
                     </p>
                 </Reveal>
