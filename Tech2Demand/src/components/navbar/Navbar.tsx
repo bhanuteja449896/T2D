@@ -34,8 +34,8 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage }) => {
                         </div>
                     </div>
 
-                    <button onClick={() => setCurrentPage && setCurrentPage('resources')} className="font-semibold text-[16px] text-darkGrey hover:text-primaryPurple transition-colors">Resources</button>
-                    <a href="#" className="font-semibold text-[16px] text-darkGrey hover:text-primaryPurple transition-colors">Company</a>
+                    <a href="#" className="font-semibold text-[16px] text-darkGrey hover:text-primaryPurple transition-colors">Resources</a>
+                    <button onClick={() => setCurrentPage && setCurrentPage('company')} className="font-semibold text-[16px] text-darkGrey hover:text-primaryPurple transition-colors">Company</button>
                     <a href="#" className="font-semibold text-[16px] text-darkGrey hover:text-primaryPurple transition-colors">Engagement Model</a>
                 </div>
 
@@ -88,8 +88,8 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage }) => {
                             </div>
                         </div>
 
-                        <button onClick={() => { if (setCurrentPage) { setCurrentPage('resources'); toggleMobileMenu(); } }} className="py-2 text-left font-semibold text-[16px] text-darkGrey hover:text-primaryPurple border-b border-gray-50">Resources</button>
-                        <a href="#" className="py-2 font-semibold text-[16px] text-darkGrey hover:text-primaryPurple border-b border-gray-50">Company</a>
+                        <a href="#" className="py-2 font-semibold text-[16px] text-darkGrey hover:text-primaryPurple border-b border-gray-50">Resources</a>
+                        <button onClick={() => { if (setCurrentPage) { setCurrentPage('company'); toggleMobileMenu(); } }} className="py-2 text-left font-semibold text-[16px] text-darkGrey hover:text-primaryPurple border-b border-gray-50">Company</button>
                         <a href="#" className="py-2 font-semibold text-[16px] text-darkGrey hover:text-primaryPurple">Engagement Model</a>
                     </div>
                     

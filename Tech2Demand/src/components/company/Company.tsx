@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Resources: React.FC = () => {
+const Company: React.FC = () => {
     return (
         <div className="bg-[#f7f7fb] text-slate-900 antialiased overflow-x-hidden selection:bg-[#9b46ff]/30 pt-[80px]">
             {/* Subtle Abstract Background Shape for Hero */}
@@ -323,4 +323,4 @@ const Resources: React.FC = () => {
     );
 };
 
-export default Resources;
+export default Company;

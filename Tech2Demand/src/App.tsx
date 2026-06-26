@@ -8,7 +8,7 @@ import ServicesSection1 from "./components/services/Section1";
 import ServicesSection2 from "./components/services/Section2";
 import Footer from "./components/footer/Footer";
 import TalkToUs from "./components/talktous/TalkToUs";
-import Resources from "./components/resources/Resources";
+import Company from "./components/company/Company";
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -33,8 +33,8 @@ function App() {
       {currentPage === 'talk' && (
         <TalkToUs />
       )}
-      {currentPage === 'resources' && (
-        <Resources />
+      {currentPage === 'company' && (
+        <Company />
       )}
       <Footer />
     </>
