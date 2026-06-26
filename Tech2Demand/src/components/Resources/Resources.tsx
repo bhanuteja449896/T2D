@@ -56,7 +56,7 @@ const Resources: React.FC = () => {
                                     <div className="text-[36px] font-bold text-slate-900 mb-1">5–10</div>
                                     <div className="text-[15px] font-medium text-slate-600 leading-snug">New Customers<br/>Opportunities</div>
                                 </div>
-                                <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm">
+                                <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm">
                                     <div className="text-[36px] font-bold text-slate-900 mb-1">5X</div>
                                     <div className="text-[15px] font-medium text-slate-600 leading-snug">Up to 5X<br/>ROI Potential</div>
                                 </div>
@@ -218,7 +218,7 @@ const Resources: React.FC = () => {
                                 <div className="w-12 h-1.5 bg-[#2e7cff] rounded-full mt-8"></div>
                             </div>
 
-                            {/* Card 3 (Green Accent) -->
+                            {/* Card 3 (Green Accent) */}
                             <div className="bg-white rounded-[1.5rem] border border-[#e7e9f0] shadow-sm p-8 lg:p-10 flex flex-col h-full hover:shadow-md hover:-translate-y-1 transition-all duration-300">
                                 <div className="h-14 w-14 rounded-full bg-[#22b36b]/10 flex items-center justify-center mb-8">
                                     <i className="ph-fill ph-chart-bar h-7 w-7 text-[#22b36b] text-[28px]"></i>
