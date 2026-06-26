@@ -34,6 +34,7 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage }) => {
                         </div>
                     </div>
 
+<<<<<<< Updated upstream
                     {/* Solutions Dropdown */}
                     <div className="relative group h-full flex items-center">
                         <a href="#" className="flex items-center gap-1 font-semibold text-[16px] text-darkGrey hover:text-primaryPurple transition-colors h-full">
@@ -59,6 +60,9 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage }) => {
                     </div>
 
                     <a href="#" className="font-semibold text-[16px] text-darkGrey hover:text-primaryPurple transition-colors">Resources</a>
+=======
+                    <button onClick={() => setCurrentPage && setCurrentPage('resources')} className="font-semibold text-[16px] text-darkGrey hover:text-primaryPurple transition-colors">Resources</button>
+>>>>>>> Stashed changes
                     <a href="#" className="font-semibold text-[16px] text-darkGrey hover:text-primaryPurple transition-colors">Company</a>
                     <a href="#" className="font-semibold text-[16px] text-darkGrey hover:text-primaryPurple transition-colors">Pricing</a>
                 </div>
@@ -107,6 +111,7 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage }) => {
                             </div>
                         </div>
 
+<<<<<<< Updated upstream
                         {/* Mobile Solutions */}
                         <div className="py-2 border-b border-gray-50">
                             <span className="font-semibold text-[16px] text-darkGrey block mb-2">Solutions</span>
@@ -128,6 +133,9 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage }) => {
                         </div>
 
                         <a href="#" className="py-2 font-semibold text-[16px] text-darkGrey hover:text-primaryPurple border-b border-gray-50">Resources</a>
+=======
+                        <button onClick={() => { if (setCurrentPage) { setCurrentPage('resources'); toggleMobileMenu(); } }} className="py-2 text-left font-semibold text-[16px] text-darkGrey hover:text-primaryPurple border-b border-gray-50">Resources</button>
+>>>>>>> Stashed changes
                         <a href="#" className="py-2 font-semibold text-[16px] text-darkGrey hover:text-primaryPurple border-b border-gray-50">Company</a>
                         <a href="#" className="py-2 font-semibold text-[16px] text-darkGrey hover:text-primaryPurple">Pricing</a>
                     </div>
