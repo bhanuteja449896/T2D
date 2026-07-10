@@ -2,7 +2,11 @@ import React from 'react';
 import './Section2.css';
 import { ParallaxLayer, Reveal, StaggerContainer, StaggerItem } from '../animations/Animations';
 
-const Section2: React.FC = () => {
+interface Props {
+    setCurrentPage?: (page: string) => void;
+}
+
+const Section2: React.FC<Props> = ({ setCurrentPage }) => {
     return (
         <section className="relative min-h-screen bg-base text-white overflow-hidden font-sans">
             {/* Background Artwork */}
@@ -22,7 +26,10 @@ const Section2: React.FC = () => {
                     <h2 className="text-[32px] sm:text-[40px] md:text-[48px] font-extrabold tracking-tight">
                         Why <span className="text-theme-purple">Tech2Demand</span>
                     </h2>
-                    <button className="px-6 py-3 rounded-full border border-theme-purple-border hover:bg-theme-purple-border/20 transition-colors text-white font-semibold text-[14px] flex items-center gap-2 group">
+                    <button 
+                        onClick={() => setCurrentPage && setCurrentPage('talk')}
+                        className="px-6 py-3 rounded-full border border-theme-purple-border hover:bg-theme-purple-border/20 transition-colors text-white font-semibold text-[14px] flex items-center gap-2 group"
+                    >
                         Book Your Free Consultation 
                         <i className="ph-bold ph-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
                     </button>

@@ -3,7 +3,11 @@ import './Section1.css';
 import frontpageSection1Img from '../../assets/frontpage_section1.png';
 import { ParallaxLayer, Reveal, StaggerContainer, StaggerItem } from '../animations/Animations';
 
-const Section1: React.FC = () => {
+interface Props {
+  setCurrentPage?: (page: string) => void;
+}
+
+const Section1: React.FC<Props> = ({ setCurrentPage }) => {
     return (
         <div className="bg-white font-inter text-mediumGrey antialiased relative overflow-x-hidden">
 
@@ -62,7 +66,7 @@ const Section1: React.FC = () => {
 
                             {/* Main Buttons */}
                             <StaggerItem className="flex flex-col sm:flex-row gap-[20px] w-full sm:w-auto">
-                                <button className="w-full sm:w-max px-8 h-[60px] rounded-[8px] bg-btn-gradient font-medium text-[16px] text-white flex items-center justify-center gap-2 shadow-xl shadow-purple-500/30 hover:shadow-purple-500/50 transition-all hover:-translate-y-0.5">
+                                <button onClick={(e) => { e.preventDefault(); if (setCurrentPage) setCurrentPage('talk'); }} className="w-full sm:w-max px-8 h-[60px] rounded-[8px] bg-btn-gradient font-medium text-[16px] text-white flex items-center justify-center gap-2 shadow-xl shadow-purple-500/30 hover:shadow-purple-500/50 transition-all hover:-translate-y-0.5">
                                     Book Your Free Consultation <i className="ph ph-arrow-right font-bold"></i>
                                 </button>
                                 <button className="w-full sm:w-[220px] h-[60px] rounded-[8px] bg-white border-2 border-primaryPurple font-medium text-[16px] text-primaryPurple flex items-center justify-center gap-2 hover:bg-purple-50 transition-colors">

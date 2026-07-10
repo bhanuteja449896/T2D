@@ -27,10 +27,25 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage }) => {
                         <a href="#" onClick={(e) => { e.preventDefault(); if (setCurrentPage) setCurrentPage('services'); }} className="flex items-center gap-1 font-semibold text-[16px] text-darkGrey hover:text-primaryPurple transition-colors h-full">
                             Services <i className="ph ph-caret-down text-sm transition-transform group-hover:rotate-180"></i>
                         </a>
-                        <div className="absolute top-[80px] left-0 w-[240px] bg-white border border-gray-100 shadow-xl rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 flex flex-col overflow-hidden">
-                            <a href="#" className="px-5 py-3 hover:bg-gray-50 text-darkGrey hover:text-primaryPurple font-medium text-[15px]">B2B Lead Generation</a>
-                            <a href="#" className="px-5 py-3 hover:bg-gray-50 text-darkGrey hover:text-primaryPurple font-medium text-[15px]">Outbound Sales</a>
-                            <a href="#" className="px-5 py-3 hover:bg-gray-50 text-darkGrey hover:text-primaryPurple font-medium text-[15px]">Appointment Setting</a>
+                        <div className="absolute top-[80px] left-0 w-[280px] bg-white border border-gray-100 shadow-xl rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 flex flex-col overflow-hidden">
+                            <a href="#" onClick={(e) => { e.preventDefault(); if (setCurrentPage) setCurrentPage('lead-generation'); }} className="px-5 py-3 hover:bg-purple-50 text-darkGrey hover:text-primaryPurple font-medium text-[15px] flex items-center gap-2">
+                                <i className="ph ph-hand-coins text-[16px] text-primaryPurple" /> Lead Generation
+                            </a>
+                            <a href="#" onClick={(e) => { e.preventDefault(); if (setCurrentPage) setCurrentPage('appointment-setting'); }} className="px-5 py-3 hover:bg-purple-50 text-darkGrey hover:text-primaryPurple font-medium text-[15px] flex items-center gap-2">
+                                <i className="ph ph-calendar-check text-[16px] text-primaryPurple" /> Appointment Setting
+                            </a>
+                            <a href="#" onClick={(e) => { e.preventDefault(); if (setCurrentPage) setCurrentPage('cold-email-outreach'); }} className="px-5 py-3 hover:bg-purple-50 text-darkGrey hover:text-primaryPurple font-medium text-[15px] flex items-center gap-2">
+                                <i className="ph ph-envelope-open text-[16px] text-primaryPurple" /> Cold Email Outreach
+                            </a>
+                            <a href="#" onClick={(e) => { e.preventDefault(); if (setCurrentPage) setCurrentPage('linkedin-lead-gen'); }} className="px-5 py-3 hover:bg-purple-50 text-darkGrey hover:text-primaryPurple font-medium text-[15px] flex items-center gap-2">
+                                <i className="ph ph-linkedin-logo text-[16px] text-primaryPurple" /> LinkedIn Lead Generation
+                            </a>
+                            <a href="#" className="px-5 py-3 hover:bg-purple-50 text-darkGrey hover:text-primaryPurple font-medium text-[15px] flex items-center gap-2">
+                                <i className="ph ph-globe text-[16px] text-primaryPurple" /> Cross-border Lead Generation
+                            </a>
+                            <a href="#" onClick={(e) => { e.preventDefault(); if (setCurrentPage) setCurrentPage('b2b-data'); }} className="px-5 py-3 hover:bg-purple-50 text-darkGrey hover:text-primaryPurple font-medium text-[15px] flex items-center gap-2">
+                                <i className="ph ph-database text-[16px] text-primaryPurple" /> B2B Data
+                            </a>
                         </div>
                     </div>
 
@@ -82,9 +97,12 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage }) => {
                                 Services
                             </span>
                             <div className="flex flex-col gap-2 pl-4">
-                                <a href="#" className="text-[15px] text-mediumGrey hover:text-primaryPurple">B2B Lead Generation</a>
-                                <a href="#" className="text-[15px] text-mediumGrey hover:text-primaryPurple">Outbound Sales</a>
-                                <a href="#" className="text-[15px] text-mediumGrey hover:text-primaryPurple">Appointment Setting</a>
+                                <a href="#" onClick={(e) => { e.preventDefault(); if (setCurrentPage) { setCurrentPage('lead-generation'); toggleMobileMenu(); } }} className="text-[15px] text-mediumGrey hover:text-primaryPurple">Lead Generation</a>
+                                <a href="#" onClick={(e) => { e.preventDefault(); if (setCurrentPage) { setCurrentPage('appointment-setting'); toggleMobileMenu(); } }} className="text-[15px] text-mediumGrey hover:text-primaryPurple">Appointment Setting</a>
+                                <a href="#" onClick={(e) => { e.preventDefault(); if (setCurrentPage) { setCurrentPage('cold-email-outreach'); toggleMobileMenu(); } }} className="text-[15px] text-mediumGrey hover:text-primaryPurple">Cold Email Outreach</a>
+                                <a href="#" className="text-[15px] text-mediumGrey hover:text-primaryPurple">LinkedIn Lead Generation</a>
+                                <a href="#" className="text-[15px] text-mediumGrey hover:text-primaryPurple">Cross-border Lead Generation</a>
+                                <a href="#" onClick={(e) => { e.preventDefault(); if (setCurrentPage) { setCurrentPage('b2b-data'); toggleMobileMenu(); } }} className="text-[15px] text-mediumGrey hover:text-primaryPurple">B2B Data</a>
                             </div>
                         </div>
 

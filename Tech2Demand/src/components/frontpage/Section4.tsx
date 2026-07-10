@@ -2,7 +2,11 @@ import React from 'react';
 import './Section4.css';
 import { ParallaxLayer, Reveal, StaggerContainer, StaggerItem } from '../animations/Animations';
 
-const Section4: React.FC = () => {
+interface Props {
+    setCurrentPage?: (page: string) => void;
+}
+
+const Section4: React.FC<Props> = ({ setCurrentPage }) => {
     return (
         <section className="relative w-full overflow-hidden bg-[#050814] text-white pt-16 md:pt-28 pb-20 md:pb-32 font-sans border-t border-white/5">
             
@@ -168,7 +172,7 @@ const Section4: React.FC = () => {
 
                     {/* Right Button Block */}
                     <div className="flex flex-col items-center lg:items-start shrink-0 z-10">
-                        <button className="group relative px-8 py-5 rounded-full bg-white text-white font-semibold text-[18px] lg:text-[20px] transition-all hover:scale-[1.02] active:scale-95 w-full sm:w-auto">
+                        <button onClick={(e) => { e.preventDefault(); if (setCurrentPage) setCurrentPage('talk'); }} className="group relative px-8 py-5 rounded-full bg-white text-white font-semibold text-[18px] lg:text-[20px] transition-all hover:scale-[1.02] active:scale-95 w-full sm:w-auto">
                             {/* Button Gradient Background */}
                             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#8a2be2] via-[#6366f1] to-[#3b82f6] opacity-90 group-hover:opacity-100 transition-opacity"></div>
                             {/* Button Inner Glow/Border */}

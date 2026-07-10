@@ -1,289 +1,311 @@
 import React from 'react';
-import { ParallaxLayer, Reveal, StaggerContainer, StaggerItem } from '../animations/Animations';
 
-const Section1: React.FC = () => {
-    return (
-        <div className="bg-[#050817] font-inter text-[#f3f4f7] antialiased relative overflow-x-hidden">
-            
-            {/* Ambient glow for the whole section */}
-            <ParallaxLayer offset={20} speed={0.2} className="absolute top-[10%] left-0 w-[800px] h-[800px] pointer-events-none z-0">
-                <div className="w-full h-full rounded-full" style={{ background: 'radial-gradient(circle, rgba(155,70,255,0.05) 0%, transparent 60%)' }}></div>
-            </ParallaxLayer>
+/* ─── Data ─────────────────────────────────────────────────── */
 
-            {/* MAIN WRAPPER: Starts directly below where a navbar would be */}
-            <main className="relative z-10 w-full">
-                
-                {/* Aligned to frontpage: px-4 sm:px-6 md:px-[60px] lg:px-[100px] */}
-                <div className="flex flex-col xl:flex-row items-center px-4 sm:px-6 md:px-[60px] lg:px-[100px] pt-[80px] lg:pt-[80px] pb-10 md:pb-12">
-                    
-                    {/* === LEFT COLUMN: Content === */}
-                    <div className="w-full xl:w-[40%] flex flex-col z-20">
-                        <StaggerContainer>
-                            {/* Badge */}
-                            <StaggerItem className="inline-flex items-center gap-2 px-4 py-2 rounded-full w-max bg-[#b357ff]/10 border border-[#9b46ff]/30 mb-[30px] relative top-[15px] shadow-[0_0_15px_rgba(155,70,255,0.15)]">
-                                <i className="ph ph-sparkles text-[#b357ff] text-lg"></i>
-                                <span className="font-medium text-[14px] text-[#b357ff] tracking-wide">
-                                    Growth Solutions That Drive Results
-                                </span>
-                            </StaggerItem>
+const services = [
+  {
+    icon: 'ph-hand-coins',
+    title: 'Lead Generation',
+    desc: 'We identify and engage your ideal prospects to build a strong, consistent pipeline.',
+    route: 'lead-generation'
+  },
+  {
+    icon: 'ph-calendar-check',
+    title: 'Appointment Setting',
+    desc: 'We book qualified meetings so your- sales team can focus entirely on closing deals.',
+    route: 'appointment-setting'
+  },
+  {
+    icon: 'ph-envelope-open',
+    title: 'Cold Email Outreach',
+    desc: 'Personalized outreach that gets opens, replies, and real conversations at scale.',
+    route: 'cold-email-outreach'
+  },
+  {
+    icon: 'ph-linkedin-logo',
+    title: 'LinkedIn Lead Generation',
+    desc: 'Leverage LinkedIn to connect with the right decision-makers at the right time.',
+    route: 'linkedin-lead-gen'
+  },
+  {
+    icon: 'ph-globe',
+    title: 'Cross-border Lead Generation',
+    desc: 'Expand your reach across global markets with confidence and local expertise.',
+    route: 'services'
+  },
+  {
+    icon: 'ph-database',
+    title: 'B2B Data',
+    desc: 'High-quality, verified data to fuel your outreach campaigns and growth initiatives.',
+    route: 'b2b-data'
+  },
+];
 
-                            {/* Main Heading */}
-                            <StaggerItem>
-                                <h1 className="font-montserrat font-medium text-[28px] sm:text-[32px] lg:text-[40px] text-[#f3f4f7] leading-[1.2] mb-[20px] max-w-[550px] tracking-tight">
-                                    <span className="block">More Qualified<br/>Meetings.</span>
-                                    <span className="block bg-gradient-to-r from-[#b357ff] via-[#8a5dfa] to-[#4d7fff] bg-clip-text text-transparent pb-2 mt-1">
-                                        More Pipeline.<br/>More Revenue.
-                                    </span>
-                                </h1>
-                            </StaggerItem>
+const locations = [
+  {
+    name: 'North America',
+    img: 'https://images.unsplash.com/photo-1485738422979-f5c462d49f74?auto=format&fit=crop&w=700&q=80',
+  },
+  {
+    name: 'Asia-Pacific',
+    img: 'https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=700&q=80',
+  },
+  {
+    name: 'Southeast Asia',
+    img: 'https://images.unsplash.com/photo-1508964942454-1a56651d54ac?auto=format&fit=crop&w=700&q=80',
+  },
+  {
+    name: 'Latin America',
+    img: 'https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=700&q=80',
+  },
+  {
+    name: 'Europe',
+    img: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=700&q=80',
+  },
+  {
+    name: 'Australia',
+    img: 'https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=700&q=80',
+  },
+];
 
-                            {/* Paragraph */}
-                            <StaggerItem>
-                                <p className="font-normal text-[16px] text-[#d0d6e3] leading-[1.6] mb-[24px] max-w-[550px]">
-                                    We help B2B companies attract the right prospects,
-                                    engage decision-makers, and build predictable
-                                    pipelines that drive sustainable growth.
-                                </p>
-                            </StaggerItem>
+/* ─── Component ─────────────────────────────────────────────── */
 
-                            {/* Mini Benefit Row */}
-                            <StaggerItem className="flex flex-col sm:flex-row items-start sm:items-center gap-[24px] mb-[24px] max-w-[550px] w-full bg-[#0d1126] rounded-[12px] p-6 border border-white/5">
-                                <div className="flex items-start gap-3 w-full sm:w-1/3">
-                                    <div className="min-w-[24px] h-[24px] rounded-full bg-[#b357ff]/20 flex items-center justify-center mt-0.5">
-                                        <i className="ph-bold ph-target text-[#b357ff] text-sm"></i>
-                                    </div>
-                                    <p className="text-[14px] leading-snug text-[#d0d6e3]">
-                                        <span className="font-semibold text-white">Target the</span><br/>Right Buyers
-                                    </p>
-                                </div>
-                                <div className="flex items-start gap-3 w-full sm:w-1/3">
-                                    <div className="min-w-[24px] h-[24px] rounded-full bg-[#b357ff]/20 flex items-center justify-center mt-0.5">
-                                        <i className="ph-bold ph-calendar text-[#b357ff] text-sm"></i>
-                                    </div>
-                                    <p className="text-[14px] leading-snug text-[#d0d6e3]">
-                                        <span className="font-semibold text-white">Book More</span><br/>Qualified Meetings
-                                    </p>
-                                </div>
-                                <div className="flex items-start gap-3 w-full sm:w-1/3">
-                                    <div className="min-w-[24px] h-[24px] rounded-full bg-[#b357ff]/20 flex items-center justify-center mt-0.5">
-                                        <i className="ph-bold ph-chart-bar text-[#b357ff] text-sm"></i>
-                                    </div>
-                                    <p className="text-[14px] leading-snug text-[#d0d6e3]">
-                                        <span className="font-semibold text-white">Create Predictable</span><br/>Pipeline Growth
-                                    </p>
-                                </div>
-                            </StaggerItem>
+interface Props {
+  setCurrentPage?: (page: string) => void;
+}
 
-                            {/* CTA Buttons */}
-                            <StaggerItem className="flex flex-col sm:flex-row gap-[20px] w-full sm:w-auto">
-                                <button className="w-full sm:w-max px-8 h-[60px] rounded-[8px] bg-gradient-to-r from-[#8b3dff] to-[#5b4eff] font-medium text-[16px] text-white flex items-center justify-center gap-2 shadow-[0_0_30px_rgba(139,61,255,0.4)] hover:shadow-[0_0_30px_rgba(139,61,255,0.6)] transition-all hover:-translate-y-0.5">
-                                    Book Your Free Growth Consultation <i className="ph ph-arrow-right font-bold"></i>
-                                </button>
-                                
-                                <button className="w-full sm:w-[220px] h-[60px] rounded-[8px] bg-transparent border-2 border-[#b357ff] font-medium text-[16px] text-[#b357ff] flex items-center justify-center gap-2 hover:bg-[#b357ff]/10 transition-colors">
-                                    <i className="ph ph-squares-four text-2xl"></i> View All Services
-                                </button>
-                            </StaggerItem>
-                        </StaggerContainer>
-                    </div>
+const ServicesPage: React.FC<Props> = ({ setCurrentPage }) => {
+  return (
+    <div className="font-inter bg-white text-darkBlue antialiased overflow-x-hidden">
 
-                    {/* === RIGHT COLUMN: Media & Dashboard Visual === */}
-                    <div className="w-full xl:w-[55%] relative mt-12 xl:mt-0 z-10 xl:ml-auto xl:pl-10">
-                        <Reveal delay={0.2} duration={0.8} yOffset={40}>
-                            {/* The Media Container */}
-                            <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-[#03040a] border border-white/5 shadow-[0_0_50px_rgba(155,70,255,0.15)] flex items-center justify-center">
-                                
-                                {/* Background Environment: Deep cinematic glow */}
-                                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#b357ff]/20 via-[#0a0c1a] to-[#03040a]"></div>
-                                
-                                {/* Neon Arc Lines (SVG) */}
-                                <svg className="absolute top-0 right-0 w-full h-[80%] opacity-60" viewBox="0 0 800 600" fill="none" preserveAspectRatio="none">
-                                    <path d="M-100,600 C200,400 500,200 900,-50" stroke="url(#neon-purple)" strokeWidth="2" filter="drop-shadow(0 0 10px rgba(179,87,255,0.8))"/>
-                                    <path d="M-100,650 C250,450 600,250 950,0" stroke="url(#neon-blue)" strokeWidth="1" opacity="0.6"/>
-                                    <defs>
-                                        <linearGradient id="neon-purple" x1="0" y1="1" x2="1" y2="0">
-                                            <stop offset="0%" stopColor="#4d7fff" stopOpacity="0" />
-                                            <stop offset="50%" stopColor="#b357ff" />
-                                            <stop offset="100%" stopColor="#ff4aa8" stopOpacity="0" />
-                                        </linearGradient>
-                                        <linearGradient id="neon-blue" x1="0" y1="1" x2="1" y2="0">
-                                            <stop offset="0%" stopColor="#4d7fff" stopOpacity="0" />
-                                            <stop offset="100%" stopColor="#4d7fff" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
+      {/* ══════════════════════════════════════════════
+          HERO SECTION  – full-width dark skyline
+      ══════════════════════════════════════════════ */}
+      <section className="relative w-full overflow-hidden" style={{ minHeight: '460px' }}>
+        {/* Skyline photo */}
+        <img
+          src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=2400&q=80"
+          alt="City skyline at dusk"
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ objectPosition: 'center 60%' }}
+        />
+        {/* Dark purple overlay */}
+        <div className="absolute inset-0" style={{
+          background: 'linear-gradient(105deg, #120d2dee 0%, #1b143de8 45%, #24164acc 72%, #0e0a22bb 100%)',
+        }} />
 
-                                {/* City Lights Ambient Glow at Bottom */}
-                                <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-[#b357ff]/10 to-transparent blur-2xl"></div>
+        {/* Content row — same horizontal padding as every other section */}
+        <div className="relative z-10 w-full px-4 sm:px-6 md:px-[60px] lg:px-[100px] flex flex-col xl:flex-row items-center gap-10 pt-[80px] pb-[64px]">
 
-                                {/* Inner Dashboard Composition */}
-                                <div className="relative z-10 w-[85%] h-[75%] mt-[-5%] rounded-xl flex flex-col p-5" style={{ background: 'rgba(13, 17, 38, 0.6)', backdropFilter: 'blur(12px)', border: '1px solid rgba(255, 255, 255, 0.05)', boxShadow: '0 10px 30px rgba(0, 0, 0, 0.5)' }}>
-                                    
-                                    {/* Dashboard UI Grid */}
-                                    <div className="grid grid-cols-2 gap-4 h-full">
-                                        {/* Widget 1: Meetings */}
-                                        <div className="bg-[#050714]/80 rounded-lg border border-white/5 p-4 flex flex-col justify-between">
-                                            <div>
-                                                <h4 className="text-[12px] text-[#d0d6e3] uppercase tracking-wider mb-1">Qualified Meetings</h4>
-                                                <div className="text-xl sm:text-3xl font-bold text-white">80+</div>
-                                                <div className="text-[11px] text-green-400 mt-1">↑ 12% vs last month</div>
-                                            </div>
-                                            {/* Mock Chart */}
-                                            <div className="w-full h-10 flex items-end justify-between gap-1 mt-4">
-                                                <div className="w-full bg-[#b357ff]/20 rounded-t-sm h-[30%] hover:bg-[#b357ff]/40 transition-all"></div>
-                                                <div className="w-full bg-[#b357ff]/20 rounded-t-sm h-[50%] hover:bg-[#b357ff]/40 transition-all"></div>
-                                                <div className="w-full bg-[#b357ff]/20 rounded-t-sm h-[40%] hover:bg-[#b357ff]/40 transition-all"></div>
-                                                <div className="w-full bg-[#b357ff] rounded-t-sm h-[80%] shadow-[0_0_10px_rgba(155,70,255,0.6)]"></div>
-                                                <div className="w-full bg-[#b357ff]/20 rounded-t-sm h-[60%] hover:bg-[#b357ff]/40 transition-all"></div>
-                                            </div>
-                                        </div>
+          {/* LEFT */}
+          <div className="flex-1 min-w-0 flex flex-col">
+            <p className="text-[16px] font-semibold mb-5" style={{ color: '#9a4cff' }}>
+              Our Services
+            </p>
+            <h1 className="font-montserrat font-extrabold leading-[1.1] text-white mb-5"
+              style={{ fontSize: 'clamp(34px, 4.5vw, 66px)' }}>
+              Solutions That Drive<br />
+              <span style={{ color: '#9a4cff' }}>Pipeline. Opportunities. Growth.</span>
+            </h1>
+            <p className="text-[17px] leading-[1.75] mb-8 max-w-[520px]" style={{ color: '#c8cadb' }}>
+              From first outreach to closed deals, we provide end-to-end solutions
+              that help you connect with the right buyers and accelerate revenue.
+            </p>
+            <div className="flex flex-wrap items-center gap-6">
+              {/* Primary CTA */}
+              <button
+                onClick={(e) => { e.preventDefault(); if (setCurrentPage) setCurrentPage('talk'); }}
+                className="flex items-center gap-2 text-white font-semibold text-[15px] px-7 py-[14px] rounded-full transition-all hover:-translate-y-[2px]"
+                style={{
+                  background: '#8b46ff',
+                  boxShadow: '0 0 28px rgba(139,70,255,0.5)',
+                  border: 'none',
+                }}
+              >
+                Book Your Free Consultation
+                <i className="ph ph-arrow-right text-[18px]" />
+              </button>
+              {/* Secondary CTA */}
+              <button className="flex items-center gap-3 font-medium text-[15px] bg-transparent border-none"
+                style={{ color: '#e8e9ef' }}>
+                Explore All Services
+                <span className="w-[30px] h-[30px] rounded-full flex items-center justify-center"
+                  style={{ border: '1.5px solid #9a4cff' }}>
+                  <i className="ph ph-arrow-right text-[14px]" style={{ color: '#9a4cff' }} />
+                </span>
+              </button>
+            </div>
+          </div>
 
-                                        {/* Widget 2: Pipeline */}
-                                        <div className="bg-[#050714]/80 rounded-lg border border-white/5 p-4 flex flex-col justify-between">
-                                            <div>
-                                                <h4 className="text-[12px] text-[#d0d6e3] uppercase tracking-wider mb-1">Pipeline Created</h4>
-                                                <div className="text-xl sm:text-3xl font-bold text-white">$1M+</div>
-                                            </div>
-                                            {/* Mock Line Chart SVG */}
-                                            <svg className="w-full h-12 mt-2" viewBox="0 0 100 40" preserveAspectRatio="none">
-                                                <path d="M0,35 L20,25 L40,30 L60,15 L80,20 L100,5" fill="none" stroke="#4d7fff" strokeWidth="2" filter="drop-shadow(0 2px 4px rgba(77,127,255,0.5))"/>
-                                                <path d="M0,35 L20,25 L40,30 L60,15 L80,20 L100,5 L100,40 L0,40 Z" fill="url(#blue-fade)" opacity="0.2"/>
-                                                <defs>
-                                                    <linearGradient id="blue-fade" x1="0" y1="0" x2="0" y2="1">
-                                                        <stop offset="0%" stopColor="#4d7fff" />
-                                                        <stop offset="100%" stopColor="#4d7fff" stopOpacity="0" />
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
-                                        </div>
-
-                                        {/* Widget 3: Status */}
-                                        <div className="bg-[#050714]/80 rounded-lg border border-white/5 p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between">
-                                            <div>
-                                                <h4 className="text-[12px] text-[#d0d6e3] uppercase tracking-wider mb-2">Meetings by Status</h4>
-                                                {/* Donut Chart Mock */}
-                                                <div className="relative w-12 h-12 sm:w-16 sm:h-16 rounded-full border-[6px] border-[#161a33]">
-                                                    <div className="absolute inset-[-6px] rounded-full border-[6px] border-transparent border-t-[#b357ff] border-r-[#b357ff] rotate-45 shadow-[0_0_10px_rgba(155,70,255,0.5)]"></div>
-                                                </div>
-                                            </div>
-                                            <div className="flex flex-col gap-2 text-[11px] text-[#d0d6e3] mt-3 sm:mt-0">
-                                                <div className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-[#b357ff]"></div>Scheduled</div>
-                                                <div className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-[#4d7fff]"></div>Completed</div>
-                                                <div className="flex items-center gap-2"><div className="w-2 h-2 rounded-full bg-[#161a33]"></div>In Progress</div>
-                                            </div>
-                                        </div>
-
-                                        {/* Widget 4: Opps */}
-                                        <div className="bg-[#050714]/80 rounded-lg border border-white/5 p-4 flex flex-col justify-between">
-                                            <div>
-                                                <h4 className="text-[12px] text-[#d0d6e3] uppercase tracking-wider mb-1">Opportunities</h4>
-                                                <div className="text-xl sm:text-3xl font-bold text-white">15+</div>
-                                                <div className="text-[11px] text-green-400 mt-1">↑ 5% vs last month</div>
-                                            </div>
-                                            <div className="flex gap-1 h-8 mt-4 items-end">
-                                            <div className="w-full bg-[#4d7fff]/30 h-[40%] rounded-sm"></div>
-                                            <div className="w-full bg-[#4d7fff]/30 h-[60%] rounded-sm"></div>
-                                            <div className="w-full bg-[#4d7fff]/30 h-[50%] rounded-sm"></div>
-                                            <div className="w-full bg-[#4d7fff]/30 h-[80%] rounded-sm"></div>
-                                            <div className="w-full bg-[#4d7fff] h-[100%] rounded-sm shadow-[0_0_8px_rgba(77,127,255,0.6)]"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Silhouette abstract implyer (Seated person in dark) */}
-                                <div className="absolute bottom-[-10%] left-[-5%] w-[40%] h-[50%] bg-[radial-gradient(ellipse_at_bottom_left,rgba(0,0,0,0.9)_0%,transparent_70%)] z-10 pointer-events-none"></div>
-
-                            </div>
-
-                        </Reveal>
-                    </div>
+          {/* RIGHT – Glass feature panel */}
+          <div className="xl:flex-shrink-0 xl:w-[340px] w-full max-w-[420px] rounded-[20px] overflow-hidden"
+            style={{
+              background: 'rgba(20,12,48,0.78)',
+              backdropFilter: 'blur(18px)',
+              border: '1px solid rgba(154,76,255,0.32)',
+              boxShadow: '0 8px 48px rgba(0,0,0,0.5)',
+            }}>
+            {[
+              { icon: 'ph-users', title: 'More Qualified Meetings', desc: 'Connect with decision-makers who matter.' },
+              { icon: 'ph-chart-bar', title: 'Stronger Pipeline', desc: 'Build a predictable and consistent pipeline.' },
+              { icon: 'ph-target', title: 'More Revenue Opportunities', desc: 'Drive growth with high-quality opportunities.' },
+            ].map((item, i, arr) => (
+              <div key={i} className="flex items-start gap-4 px-6 py-5"
+                style={{ borderBottom: i < arr.length - 1 ? '1px solid rgba(255,255,255,0.07)' : 'none' }}>
+                <div className="flex-shrink-0 w-[44px] h-[44px] rounded-full flex items-center justify-center"
+                  style={{ background: 'rgba(139,70,255,0.22)', border: '1px solid rgba(154,76,255,0.38)' }}>
+                  <i className={`ph ${item.icon} text-[20px]`} style={{ color: '#9a4cff' }} />
                 </div>
-
-
-
-                {/* === LOWER SECTION: Title & Divider === */}
-                <div className="px-4 sm:px-6 md:px-[60px] lg:px-[100px] mt-8 lg:mt-8 mb-16">
-                    <Reveal yOffset={20}>
-                        {/* Title Row with lines */}
-                        <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-6">
-                            <div className="hidden md:block flex-1 h-px bg-gradient-to-r from-transparent to-[#b357ff]/40 max-w-[250px]"></div>
-                            
-                            <div className="flex items-center gap-4">
-                                <i className="ph ph-sparkles w-5 h-5 text-[#b357ff]"></i>
-                                <h2 className="text-[30px] sm:text-[36px] md:text-[48px] lg:text-[52px] font-bold text-white text-center leading-tight tracking-tight">
-                                    Solutions Built to Fuel Your Growth
-                                </h2>
-                                <i className="ph ph-sparkles w-5 h-5 text-[#b357ff]"></i>
-                            </div>
-
-                            <div className="hidden md:block flex-1 h-px bg-gradient-to-l from-transparent to-[#b357ff]/40 max-w-[250px]"></div>
-                        </div>
-
-                        {/* Subtext */}
-                        <p className="text-center text-[16px] sm:text-[18px] md:text-[20px] text-[#d0d6e3] max-w-4xl mx-auto font-medium">
-                            Expert-led services that help you attract the right prospects, engage decision-makers, and build a strong, predictable pipeline.
-                        </p>
-                    </Reveal>
+                <div>
+                  <p className="text-white font-bold text-[15px] mb-[3px]">{item.title}</p>
+                  <p className="text-[13px] leading-[1.55]" style={{ color: '#a8abbe' }}>{item.desc}</p>
                 </div>
-
-                {/* === LOWER SECTION: 4-Card Grid === */}
-                <div className="px-4 sm:px-6 md:px-[60px] lg:px-[100px] relative z-10 pb-20">
-                    <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        
-                        {/* Card 1: Qualified Meeting Generation */}
-                        <StaggerItem className="bg-[#0d1126] rounded-2xl p-8 border border-white/5 hover:border-[#b357ff]/30 transition-all duration-300 flex flex-col h-full group hover:shadow-[0_10px_30px_rgba(179,87,255,0.08)]">
-                            <div className="w-12 h-12 rounded-lg bg-[#b357ff]/10 flex items-center justify-center mb-6">
-                                <i className="ph ph-users w-6 h-6 text-[#b357ff] group-hover:scale-110 transition-transform text-xl"></i>
-                            </div>
-                            <h3 className="text-[24px] md:text-[28px] lg:text-[32px] font-bold text-white leading-[1.15] mb-4">
-                                Qualified Meeting<br/>Generation
-                            </h3>
-                            <p className="text-[16px] sm:text-[17px] text-[#d0d6e3] leading-relaxed mb-8 flex-grow">
-                                We connect you with decision-makers who are ready to talk and explore solutions.
-                            </p>
-                            <a href="#" className="text-[16px] sm:text-[18px] font-semibold text-[#b357ff] flex items-center gap-2 hover:gap-3 transition-all mt-auto w-fit">
-                                Learn more <i className="ph ph-arrow-right w-5 h-5"></i>
-                            </a>
-                        </StaggerItem>
-
-                        {/* Card 2: Demand Generation */}
-                        <StaggerItem className="bg-[#0d1126] rounded-2xl p-8 border border-white/5 hover:border-[#21d6c7]/30 transition-all duration-300 flex flex-col h-full group hover:shadow-[0_10px_30px_rgba(33,214,199,0.08)]">
-                            <div className="w-12 h-12 rounded-lg bg-[#21d6c7]/10 flex items-center justify-center mb-6">
-                                <i className="ph ph-funnel w-6 h-6 text-[#21d6c7] group-hover:scale-110 transition-transform text-xl"></i>
-                            </div>
-                            <h3 className="text-[24px] md:text-[28px] lg:text-[32px] font-bold text-white leading-[1.15] mb-4">
-                                Demand<br/>Generation
-                            </h3>
-                            <p className="text-[16px] sm:text-[17px] text-[#d0d6e3] leading-relaxed mb-8 flex-grow">
-                                Multi-channel campaigns that build awareness, generate interest, and create a consistent flow of opportunities.
-                            </p>
-                            <a href="#" className="text-[16px] sm:text-[18px] font-semibold text-[#21d6c7] flex items-center gap-2 hover:gap-3 transition-all mt-auto w-fit">
-                                Learn more <i className="ph ph-arrow-right w-5 h-5"></i>
-                            </a>
-                        </StaggerItem>
-
-                        {/* Card 4: Revenue Growth Consulting */}
-                        <StaggerItem className="bg-[#0d1126] rounded-2xl p-8 border border-white/5 hover:border-[#ff9a1f]/30 transition-all duration-300 flex flex-col h-full group hover:shadow-[0_10px_30px_rgba(255,154,31,0.08)]">
-                            <div className="w-12 h-12 rounded-lg bg-[#ff9a1f]/10 flex items-center justify-center mb-6">
-                                <i className="ph ph-trend-up w-6 h-6 text-[#ff9a1f] group-hover:scale-110 transition-transform text-xl"></i>
-                            </div>
-                            <h3 className="text-[24px] md:text-[28px] lg:text-[32px] font-bold text-white leading-[1.15] mb-4">
-                                Revenue Growth<br/>Consulting
-                            </h3>
-                            <p className="text-[16px] sm:text-[17px] text-[#d0d6e3] leading-relaxed mb-8 flex-grow">
-                                Strategy, optimization, and insights to improve performance and accelerate revenue growth.
-                            </p>
-                            <a href="#" className="text-[16px] sm:text-[18px] font-semibold text-[#ff9a1f] flex items-center gap-2 hover:gap-3 transition-all mt-auto w-fit">
-                                Learn more <i className="ph ph-arrow-right w-5 h-5"></i>
-                            </a>
-                        </StaggerItem>
-
-                    </StaggerContainer>
-                </div>
-            </main>
+              </div>
+            ))}
+          </div>
         </div>
-    );
+      </section>
+
+      {/* ══════════════════════════════════════════════
+          OUR SERVICES SECTION
+      ══════════════════════════════════════════════ */}
+      <section className="w-full bg-white py-[72px]">
+        <div className="w-full px-4 sm:px-6 md:px-[60px] lg:px-[100px]">
+
+          {/* Title */}
+          <div className="text-center mb-12">
+            <h2 className="font-montserrat font-extrabold text-[38px] text-darkBlue mb-3">
+              Our Services
+            </h2>
+            <div className="w-[52px] h-[4px] rounded-full mx-auto" style={{ background: '#8b46ff' }} />
+          </div>
+
+          {/* 6-card grid – full width, no max-width cap */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-5">
+            {services.map((s, i) => (
+              <div
+                key={i}
+                onClick={(e) => { e.preventDefault(); if (setCurrentPage) setCurrentPage(s.route); }}
+                className="group bg-white rounded-[18px] flex flex-col transition-all duration-300 cursor-pointer"
+                style={{
+                  border: '1.5px solid #e8e9ef',
+                  boxShadow: '0 2px 16px rgba(0,0,0,0.06)',
+                  padding: '32px 24px 28px',
+                }}
+                onMouseEnter={e => {
+                  const el = e.currentTarget as HTMLElement;
+                  el.style.boxShadow = '0 8px 32px rgba(139,70,255,0.16)';
+                  el.style.borderColor = '#c4a0ff';
+                  el.style.transform = 'translateY(-4px)';
+                }}
+                onMouseLeave={e => {
+                  const el = e.currentTarget as HTMLElement;
+                  el.style.boxShadow = '0 2px 16px rgba(0,0,0,0.06)';
+                  el.style.borderColor = '#e8e9ef';
+                  el.style.transform = 'translateY(0)';
+                }}
+              >
+                {/* Icon circle */}
+                <div className="w-[60px] h-[60px] rounded-full flex items-center justify-center mb-5 flex-shrink-0"
+                  style={{ background: 'linear-gradient(135deg, rgba(139,70,255,0.12) 0%, rgba(139,70,255,0.24) 100%)' }}>
+                  <i className={`ph ${s.icon} text-[26px]`} style={{ color: '#8b46ff' }} />
+                </div>
+
+                {/* Title */}
+                <h3 className="font-bold text-darkBlue mb-3 leading-[1.3]"
+                  style={{ fontSize: '17px' }}>
+                  {s.title}
+                </h3>
+
+                {/* Description */}
+                <p className="text-[14px] leading-[1.7] flex-grow mb-6"
+                  style={{ color: '#5e6577' }}>
+                  {s.desc}
+                </p>
+
+                {/* Arrow button */}
+                <div className="w-[38px] h-[38px] rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-[#8b46ff]"
+                  style={{ border: '1.5px solid #d4b8ff' }}>
+                  <i className="ph ph-arrow-right text-[16px] group-hover:text-white transition-colors"
+                    style={{ color: '#8b46ff' }} />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════
+          DIVIDER PILL
+      ══════════════════════════════════════════════ */}
+      <div className="w-full px-4 sm:px-6 md:px-[60px] lg:px-[100px] flex items-center gap-5 py-8">
+        <div className="flex-1 h-px" style={{ background: 'linear-gradient(to right, transparent, #d0b3ff)' }} />
+        <div className="flex items-center gap-2 px-5 py-[9px] rounded-full flex-shrink-0"
+          style={{ border: '1.5px solid #9a4cff', background: '#ffffff' }}>
+          <i className="ph ph-globe-hemisphere-west text-[16px]" style={{ color: '#9a4cff' }} />
+          <span className="font-semibold text-[14px] whitespace-nowrap" style={{ color: '#9a4cff' }}>
+            Generate Web Pages
+          </span>
+        </div>
+        <div className="flex-1 h-px" style={{ background: 'linear-gradient(to left, transparent, #d0b3ff)' }} />
+      </div>
+
+      {/* ══════════════════════════════════════════════
+          GLOBAL SECTION
+      ══════════════════════════════════════════════ */}
+      <section className="w-full bg-white pb-[80px]">
+        <div className="w-full px-4 sm:px-6 md:px-[60px] lg:px-[100px]">
+
+          {/* Title */}
+          <div className="text-center mb-12">
+            <h2 className="font-montserrat font-extrabold text-[36px] text-darkBlue mb-3">
+              We Serve Businesses Across the Globe
+            </h2>
+            <div className="w-[52px] h-[4px] rounded-full mx-auto" style={{ background: '#8b46ff' }} />
+          </div>
+
+          {/* 6 location cards – full width */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-4">
+            {locations.map((loc, i) => (
+              <div
+                key={i}
+                className="relative rounded-[16px] overflow-hidden cursor-pointer transition-all duration-300"
+                style={{
+                  aspectRatio: '3 / 4',
+                  boxShadow: '0 4px 20px rgba(0,0,0,0.14)',
+                }}
+                onMouseEnter={e => {
+                  const el = e.currentTarget as HTMLElement;
+                  el.style.transform = 'translateY(-5px)';
+                  el.style.boxShadow = '0 12px 36px rgba(0,0,0,0.26)';
+                }}
+                onMouseLeave={e => {
+                  const el = e.currentTarget as HTMLElement;
+                  el.style.transform = 'translateY(0)';
+                  el.style.boxShadow = '0 4px 20px rgba(0,0,0,0.14)';
+                }}
+              >
+                {/* Photo */}
+                <img
+                  src={loc.img}
+                  alt={loc.name}
+                  className="absolute inset-0 w-full h-full object-cover block"
+                />
+                {/* Gradient overlay */}
+                <div className="absolute inset-0"
+                  style={{ background: 'linear-gradient(to top, rgba(8,4,24,0.85) 0%, rgba(0,0,0,0) 52%)' }} />
+                {/* Label */}
+                <div className="absolute bottom-[14px] left-[14px] flex items-center gap-[6px]">
+                  <i className="ph-fill ph-map-pin text-white text-[17px]" />
+                  <span className="text-white font-semibold text-[13px]">{loc.name}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 };
 
-export default Section1;
+export default ServicesPage;

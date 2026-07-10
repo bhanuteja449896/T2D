@@ -2,7 +2,11 @@ import React from 'react';
 import './Section3.css';
 import { Reveal, StaggerContainer, StaggerItem } from '../animations/Animations';
 
-const Section3: React.FC = () => {
+interface Props {
+    setCurrentPage?: (page: string) => void;
+}
+
+const Section3: React.FC<Props> = ({ setCurrentPage }) => {
     return (
         <section className="growth-section">
             <div className="w-full px-4 sm:px-6 md:px-[60px] lg:px-[100px]">
@@ -15,7 +19,7 @@ const Section3: React.FC = () => {
                         <p className="supporting-text">A proven 4-step process to attract the right prospects, generate qualified meetings, and build a predictable pipeline that drives revenue growth.</p>
                     </StaggerItem>
                     <StaggerItem className="cta-block">
-                        <a href="#" className="cta-button">Book Your Free Consultation <span>&rarr;</span></a>
+                        <a href="#" onClick={(e) => { e.preventDefault(); if (setCurrentPage) setCurrentPage('talk'); }} className="cta-button">Book Your Free Consultation <span>&rarr;</span></a>
                         <br/>
                         <div className="cta-note">
                             <i className="ph-bold ph-shield-check"></i>
