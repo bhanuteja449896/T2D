@@ -51,7 +51,27 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage }) => {
 
                     <a href="#" className="font-semibold text-[16px] text-darkGrey hover:text-primaryPurple transition-colors">Resources</a>
                     <button onClick={() => setCurrentPage && setCurrentPage('company')} className="font-semibold text-[16px] text-darkGrey hover:text-primaryPurple transition-colors">Company</button>
-                    <a href="#" className="font-semibold text-[16px] text-darkGrey hover:text-primaryPurple transition-colors">Engagement Model</a>
+                    
+                    {/* Engagement Model Dropdown */}
+                    <div className="relative group h-full flex items-center">
+                        <a href="#" onClick={(e) => { e.preventDefault(); }} className="flex items-center gap-1 font-semibold text-[16px] text-darkGrey hover:text-primaryPurple transition-colors h-full">
+                            Engagement Model <i className="ph ph-caret-down text-sm transition-transform group-hover:rotate-180"></i>
+                        </a>
+                        <div className="absolute top-[80px] -left-10 w-[340px] bg-white border border-gray-100 shadow-xl rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 flex flex-col overflow-hidden">
+                            <a href="#" className="px-5 py-3 hover:bg-purple-50 text-darkGrey hover:text-primaryPurple font-medium text-[15px] flex items-center gap-2">
+                                <i className="ph ph-handshake text-[16px] text-primaryPurple" /> Pay per Completed Meeting
+                            </a>
+                            <a href="#" className="px-5 py-3 hover:bg-purple-50 text-darkGrey hover:text-primaryPurple font-medium text-[15px] flex items-center gap-2">
+                                <i className="ph ph-users-three text-[16px] text-primaryPurple" /> Retainer - Dedicated Resource Model
+                            </a>
+                            <a href="#" className="px-5 py-3 hover:bg-purple-50 text-darkGrey hover:text-primaryPurple font-medium text-[15px] flex items-center gap-2">
+                                <i className="ph ph-rocket text-[16px] text-primaryPurple" /> Multiple Campaigns Model
+                            </a>
+                            <a href="#" className="px-5 py-3 hover:bg-purple-50 text-darkGrey hover:text-primaryPurple font-medium text-[15px] flex items-center gap-2">
+                                <i className="ph ph-database text-[16px] text-primaryPurple" /> B2B Data Service Model
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="hidden lg:flex items-center gap-4">
@@ -108,7 +128,19 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage }) => {
 
                         <a href="#" className="py-2 font-semibold text-[16px] text-darkGrey hover:text-primaryPurple border-b border-gray-50">Resources</a>
                         <button onClick={() => { if (setCurrentPage) { setCurrentPage('company'); toggleMobileMenu(); } }} className="py-2 text-left font-semibold text-[16px] text-darkGrey hover:text-primaryPurple border-b border-gray-50">Company</button>
-                        <a href="#" className="py-2 font-semibold text-[16px] text-darkGrey hover:text-primaryPurple">Engagement Model</a>
+                        
+                        {/* Mobile Engagement Model Dropdown */}
+                        <div className="py-2">
+                            <span className="font-semibold text-[16px] text-darkGrey block mb-2 cursor-pointer hover:text-primaryPurple">
+                                Engagement Model
+                            </span>
+                            <div className="flex flex-col gap-2 pl-4">
+                                <a href="#" className="text-[15px] text-mediumGrey hover:text-primaryPurple">Pay per Completed Meeting</a>
+                                <a href="#" className="text-[15px] text-mediumGrey hover:text-primaryPurple">Retainer - Dedicated Resource Model</a>
+                                <a href="#" className="text-[15px] text-mediumGrey hover:text-primaryPurple">Multiple Campaigns Model</a>
+                                <a href="#" className="text-[15px] text-mediumGrey hover:text-primaryPurple">B2B Data Service Model</a>
+                            </div>
+                        </div>
                     </div>
                     
                     <div className="flex flex-col gap-3 px-6 mt-6 pb-4">

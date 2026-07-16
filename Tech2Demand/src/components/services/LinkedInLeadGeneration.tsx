@@ -499,7 +499,6 @@ const LinkedInLeadGeneration: React.FC<Props> = ({ setCurrentPage }) => {
 
             {/* RIGHT – Paragraph + CTA */}
             <div className="lg:w-[28%] flex-shrink-0 flex flex-col gap-5">
-              <p className="text-[15px] leading-[1.75]" style={{ color: '#c4b4ff' }}>
               <p className="text-[15px] leading-[1.75]" style={{ color: '#c4c8ff' }}>
                 Let our LinkedIn experts build relationships,
                 start conversations, and book more meetings
