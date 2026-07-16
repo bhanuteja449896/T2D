@@ -14,12 +14,6 @@ const Footer: React.FC = () => {
                         </div>
                         <div className="flex flex-col gap-3 mt-2">
                             <span className="text-[15px] hover:text-white transition-colors cursor-pointer flex items-center gap-2">
-                                <i className="ph ph-map-pin text-[#a64dff]"></i> Philadelphia
-                            </span>
-                            <span className="text-[15px] hover:text-white transition-colors cursor-pointer flex items-center gap-2">
-                                <i className="ph ph-map-pin text-[#a64dff]"></i> Bengaluru
-                            </span>
-                            <span className="text-[15px] hover:text-white transition-colors cursor-pointer flex items-center gap-2">
                                 <i className="ph ph-map-pin text-[#a64dff]"></i> Hyderabad
                             </span>
                         </div>
@@ -70,7 +64,7 @@ const Footer: React.FC = () => {
                         &copy; {new Date().getFullYear()} Tech2Demand Global. All rights reserved.
                     </p>
                     <div className="flex items-center gap-6">
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors text-xl">
+                        <a href="https://www.linkedin.com/company/tech2demand/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xl">
                             <i className="ph-fill ph-linkedin-logo"></i>
                         </a>
                         <a href="#" className="text-gray-400 hover:text-white transition-colors text-xl">
