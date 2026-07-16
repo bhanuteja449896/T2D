@@ -6,25 +6,6 @@ interface Props {
 
 /* ─── Data ─────────────────────────────────────────────── */
 
-const stats = [
-  {
-    label: 'Every Project\nMonthly we book',
-    value: '10 to 25',
-    sub: 'Qualified Leads',
-    icon: 'ph-calendar-dots',
-  },
-  {
-    value: '5X',
-    sub: 'Pipeline Growth\nOn Average',
-    icon: 'ph-users-three',
-  },
-  {
-    value: '6X',
-    sub: 'ROI\nFrom Our Campaigns',
-    icon: 'ph-target',
-  },
-];
-
 const benefits = [
   {
     icon: 'ph-user-circle',
@@ -271,7 +252,6 @@ const ColdEmailOutreach: React.FC<Props> = ({ setCurrentPage }) => {
               border: '1.5px solid #e8e9ef',
               boxShadow: '0 4px 24px rgba(0,0,0,0.07)',
               background: '#ffffff',
-              divideColor: '#e8e9ef',
             }}
           >
             {/* Stat 1 */}

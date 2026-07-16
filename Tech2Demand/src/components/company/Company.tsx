@@ -4,7 +4,7 @@ interface Props {
   setCurrentPage?: (page: string) => void;
 }
 
-const Company: React.FC<Props> = ({ setCurrentPage }) => {
+const Company: React.FC<Props> = ({ setCurrentPage: _setCurrentPage }) => {
     return (
         <div className="bg-[#f7f7fb] text-slate-900 antialiased overflow-x-hidden selection:bg-[#9b46ff]/30 pt-[80px]">
             {/* Subtle Abstract Background Shape for Hero */}
