@@ -8,9 +8,8 @@ const Footer: React.FC = () => {
                     
                     {/* Column 1: Logo & Locations */}
                     <div className="flex flex-col gap-6">
-                        <div className="flex items-baseline">
-                            <span className="font-montserrat font-extrabold text-[32px] text-white tracking-tight">Tech2Demand Global</span>
-                            <div className="w-[6px] h-[6px] bg-[#b14dff] rounded-full mx-1"></div>
+                        <div className="flex items-center">
+                            <img src="/logo.svg" alt="Tech2Demand Global" className="h-[48px] w-auto object-contain" />
                         </div>
                         <div className="flex flex-col gap-3 mt-2">
                             <span className="text-[15px] hover:text-white transition-colors cursor-pointer flex items-center gap-2">
@@ -24,7 +23,6 @@ const Footer: React.FC = () => {
                         <h4 className="text-white font-semibold text-[18px] mb-2">Services</h4>
                         <a href="#" className="text-[15px] hover:text-[#a64dff] transition-colors">Services Overview</a>
                         <a href="#" className="text-[15px] hover:text-[#a64dff] transition-colors">Sales Qualified Meetings</a>
-                        <a href="#" className="text-[15px] hover:text-[#a64dff] transition-colors">Social Media Management</a>
                         <a href="#" className="text-[15px] hover:text-[#a64dff] transition-colors">Outsourced Sales Team</a>
                     </div>
 
@@ -48,13 +46,6 @@ const Footer: React.FC = () => {
                         <a href="#" className="text-[15px] hover:text-[#a64dff] transition-colors">News and Events</a>
                         <a href="#" className="text-[15px] hover:text-[#a64dff] transition-colors">Glossary</a>
                     </div>
-                    
-                    {/* Column 5: Our Network */}
-                    <div className="flex flex-col gap-4">
-                        <h4 className="text-white font-semibold text-[18px] mb-2">Our Network</h4>
-                        <a href="#" className="text-[15px] hover:text-[#a64dff] transition-colors">Bosswallah.com</a>
-                        <a href="#" className="text-[15px] hover:text-[#a64dff] transition-colors">Bosswallah.ai</a>
-                    </div>
 
                 </div>
 
@@ -67,12 +58,7 @@ const Footer: React.FC = () => {
                         <a href="https://www.linkedin.com/company/tech2demand/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xl">
                             <i className="ph-fill ph-linkedin-logo"></i>
                         </a>
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors text-xl">
-                            <i className="ph-fill ph-twitter-logo"></i>
-                        </a>
-                        <a href="#" className="text-gray-400 hover:text-white transition-colors text-xl">
-                            <i className="ph-fill ph-facebook-logo"></i>
-                        </a>
+
                     </div>
                 </div>
             </div>

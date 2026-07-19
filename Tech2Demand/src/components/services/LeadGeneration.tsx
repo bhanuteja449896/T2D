@@ -168,7 +168,7 @@ const LeadGeneration: React.FC<Props> = ({ setCurrentPage }) => {
 
               {/* Paragraph */}
               <p className="text-[17px] leading-[1.75] mb-8 max-w-[560px]" style={{ color: '#cfd2df' }}>
-                FunnL helps B2B companies connect with the right decision-makers
+                Tech2Demand Global helps B2B companies connect with the right decision-makers
                 and generate high-quality leads that convert into real opportunities.
                 Our data-driven strategies, personalized outreach, and multi-channel
                 engagement ensure a steady flow of qualified prospects.
@@ -265,7 +265,7 @@ const LeadGeneration: React.FC<Props> = ({ setCurrentPage }) => {
 
           <div className="text-center mb-12">
             <h2 className="font-montserrat font-extrabold text-[32px] mb-3" style={{ color: '#171927' }}>
-              Why Businesses Choose FunnL for Lead Generation
+              Why Businesses Choose Tech2Demand Global for Lead Generation
             </h2>
             <div className="w-[52px] h-[4px] rounded-full mx-auto" style={{ background: '#8b46ff' }} />
           </div>

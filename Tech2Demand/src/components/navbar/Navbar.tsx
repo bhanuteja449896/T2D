@@ -46,9 +46,8 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage, currentPage = 'home' })
         >
             <div className="w-full flex justify-between items-center px-4 sm:px-6 md:px-[60px] lg:px-[100px] h-[80px]">
                 {/* Logo */}
-                <div className="flex items-baseline cursor-pointer flex-shrink-0" onClick={() => navigate('home')}>
-                    <span className="font-montserrat font-extrabold text-[26px] sm:text-[30px] text-darkBlue tracking-tight">Tech2Demand</span>
-                    <div className="w-[6px] h-[6px] bg-primaryPurple rounded-full mx-1"></div>
+                <div className="flex items-center cursor-pointer flex-shrink-0" onClick={() => navigate('home')}>
+                    <img src="/logo.svg" alt="Tech2Demand Global" className="h-[40px] sm:h-[48px] w-auto object-contain" />
                 </div>
 
                 {/* Desktop Menu */}
@@ -69,7 +68,7 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage, currentPage = 'home' })
                                 { icon: 'ph-calendar-check', label: 'Appointment Setting', page: 'appointment-setting' },
                                 { icon: 'ph-envelope-open', label: 'Cold Email Outreach', page: 'cold-email-outreach' },
                                 { icon: 'ph-linkedin-logo', label: 'LinkedIn Lead Generation', page: 'linkedin-lead-gen' },
-                                { icon: 'ph-globe', label: 'Cross-border Lead Gen', page: 'services' },
+                                { icon: 'ph-globe', label: 'Cross-border Lead Gen', page: 'cross-border-lead-gen' },
                                 { icon: 'ph-database', label: 'B2B Data', page: 'b2b-data' },
                             ].map((item) => (
                                 <a key={item.page} href={`#/${item.page}`}
@@ -115,7 +114,8 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage, currentPage = 'home' })
                     <a href="#/company" onClick={(e) => { e.preventDefault(); navigate('company'); }}
                         className={`${defaultLinkClass} ${currentPage === 'company' ? activeLinkClass : ''}`}>Company</a>
 
-                    <a href="#" className={`${defaultLinkClass}`}>Resources</a>
+                    <a href="#/resources" onClick={(e) => { e.preventDefault(); navigate('resources'); }}
+                        className={`${defaultLinkClass} ${currentPage === 'resources' ? activeLinkClass : ''}`}>Case Studies</a>
                 </div>
 
                 {/* Desktop CTA buttons */}
@@ -161,7 +161,7 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage, currentPage = 'home' })
                                 { label: 'Appointment Setting', page: 'appointment-setting' },
                                 { label: 'Cold Email Outreach', page: 'cold-email-outreach' },
                                 { label: 'LinkedIn Lead Generation', page: 'linkedin-lead-gen' },
-                                { label: 'Cross-border Lead Generation', page: 'services' },
+                                { label: 'Cross-border Lead Generation', page: 'cross-border-lead-gen' },
                                 { label: 'B2B Data', page: 'b2b-data' },
                             ].map(item => (
                                 <button key={item.page} onClick={() => navigate(item.page)}
@@ -198,9 +198,10 @@ const Navbar: React.FC<NavbarProps> = ({ setCurrentPage, currentPage = 'home' })
                         Company
                     </button>
 
-                    <a href="#" className="py-2.5 font-semibold text-[16px] text-darkGrey hover:text-primaryPurple border-b border-gray-100">
-                        Resources
-                    </a>
+                    <button onClick={() => navigate('resources')}
+                        className={`py-2.5 text-left font-semibold text-[16px] border-b border-gray-100 ${currentPage === 'resources' ? 'text-primaryPurple' : 'text-darkGrey hover:text-primaryPurple'}`}>
+                        Case Studies
+                    </button>
 
                     {/* Mobile CTAs */}
                     <div className="flex flex-col gap-3 mt-4 pb-4">

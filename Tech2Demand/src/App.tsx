@@ -15,11 +15,13 @@ import ColdEmailOutreach from "./components/services/ColdEmailOutreach";
 import GrowthSolutions from "./components/services/GrowthSolutions";
 import LeadGeneration from "./components/services/LeadGeneration";
 import B2BData from "./components/services/B2BData";
+import CrossBorderLeadGeneration from "./components/services/CrossBorderLeadGeneration";
 import EngagementModels from "./components/engagement/EngagementModels";
 import PayPerMeeting from "./components/engagement/PayPerMeeting";
 import RetainerModel from "./components/engagement/RetainerModel";
 import MultipleCampaigns from "./components/engagement/MultipleCampaigns";
 import B2BDataService from "./components/engagement/B2BDataService";
+import Resources from "./components/resources/Resources";
 
 // ─── Route helpers ────────────────────────────────────────────────────────────
 // We store the current page in location.hash so the browser back/forward buttons
@@ -131,6 +133,12 @@ function App() {
       )}
       {currentPage === "b2b-data" && (
         <B2BData setCurrentPage={setCurrentPage} />
+      )}
+      {currentPage === "cross-border-lead-gen" && (
+        <CrossBorderLeadGeneration setCurrentPage={setCurrentPage} />
+      )}
+      {currentPage === "resources" && (
+        <Resources setCurrentPage={setCurrentPage} />
       )}
       {currentPage === "talk" && <TalkToUs />}
       {currentPage === "company" && (

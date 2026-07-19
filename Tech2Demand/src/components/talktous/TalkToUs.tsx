@@ -174,15 +174,7 @@ const TalkToUs: React.FC = () => {
                             </p>
                         </StaggerItem>
 
-                        <StaggerItem className="bg-[#0d1126] border border-white/5 rounded-2xl p-8 hover:border-[#21d6c7]/30 transition-all group">
-                            <div className="w-12 h-12 rounded-lg bg-[#21d6c7]/10 flex items-center justify-center mb-6">
-                                <i className="ph-fill ph-share-network text-[#21d6c7] text-2xl group-hover:scale-110 transition-transform"></i>
-                            </div>
-                            <h3 className="text-[22px] font-bold mb-3">Social Media Management</h3>
-                            <p className="text-[15px] text-[#d0d6e3] leading-relaxed">
-                                LinkedIn, Instagram, and YouTube content that builds your brand authority and drives inbound leads.
-                            </p>
-                        </StaggerItem>
+
 
                     </StaggerContainer>
                 </div>

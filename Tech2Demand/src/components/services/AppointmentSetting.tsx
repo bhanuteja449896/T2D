@@ -156,7 +156,7 @@ const AppointmentSetting: React.FC<Props> = ({ setCurrentPage }) => {
 
               {/* Paragraph */}
               <p className="text-[17px] leading-[1.75] mb-8 max-w-[500px]" style={{ color: '#5f6577' }}>
-                FunnL's appointment setting experts connect with your ideal prospects, qualify their needs,
+                Tech2Demand Global's appointment setting experts connect with your ideal prospects, qualify their needs,
                 and book meetings with your sales team—so you can focus on closing.
               </p>
 
@@ -241,7 +241,7 @@ const AppointmentSetting: React.FC<Props> = ({ setCurrentPage }) => {
           {/* Title */}
           <div className="text-center mb-12">
             <h2 className="font-montserrat font-extrabold text-[32px] mb-3" style={{ color: '#171927' }}>
-              Why Businesses Choose FunnL for Appointment Setting
+              Why Businesses Choose Tech2Demand Global for Appointment Setting
             </h2>
             <div className="w-[52px] h-[4px] rounded-full mx-auto" style={{ background: '#8b46ff' }} />
           </div>
