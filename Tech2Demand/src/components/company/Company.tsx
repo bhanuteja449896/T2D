@@ -186,8 +186,8 @@ const Company: React.FC<Props> = ({ setCurrentPage: _setCurrentPage }) => {
                             <h2 className="text-[44px] lg:text-[56px] font-extrabold text-[#161826] mb-5 tracking-tight leading-[1.1]">
                                 How We Help You Grow
                             </h2>
-                            <p className="text-[18px] lg:text-[20px] text-[#606779] font-medium">
-                                End-to-end growth services — from first contact to closed deal.
+                            <p className="text-[18px] leading-[1.8] mb-12 font-medium" style={{ color: '#5f6577' }}>
+                                End-to-end growth services from first contact to closed deal.
                             </p>
                         </div>
 

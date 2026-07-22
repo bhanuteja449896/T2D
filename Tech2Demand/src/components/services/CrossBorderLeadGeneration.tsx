@@ -83,9 +83,8 @@ const CrossBorderLeadGeneration: React.FC<Props> = ({ setCurrentPage }) => {
 
               {/* Paragraph */}
               <p className="text-[18px] leading-[1.7] mb-8 max-w-[560px]" style={{ color: '#5f667a' }}>
-                We help you reach international markets with targeted, compliant
-                outreach and local insights—connecting you with high-quality leads
-                across different regions and time zones.
+                We help you reach international markets with targeted, compliant outreach and
+                local insights, connecting you with high-quality leads across different regions and time zones.
               </p>
 
               {/* Info Box */}

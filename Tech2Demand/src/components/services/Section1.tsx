@@ -31,7 +31,7 @@ const services = [
     icon: 'ph-globe',
     title: 'Cross-border Lead Generation',
     desc: 'Expand your reach across global markets with confidence and local expertise.',
-    route: 'services'
+    route: 'cross-border-lead-gen'
   },
   {
     icon: 'ph-database',

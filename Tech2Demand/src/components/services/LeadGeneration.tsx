@@ -83,6 +83,11 @@ const industries = [
   { icon: 'ph-book-open', label: 'Education' },
   { icon: 'ph-airplane-tilt', label: 'Travel &\nHospitality' },
   { icon: 'ph-house', label: 'Real Estate' },
+  { icon: 'ph-thermometer', label: 'HVAC' },
+  { icon: 'ph-package', label: 'CPG' },
+  { icon: 'ph-sparkle', label: 'Beauty' },
+  { icon: 'ph-wrench', label: 'Home Services' },
+  { icon: 'ph-users', label: 'Member Services' },
   { icon: 'ph-dots-three-circle', label: 'And Many\nMore...' },
 ];
 

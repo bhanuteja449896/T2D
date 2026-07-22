@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
                         &copy; {new Date().getFullYear()} Tech2Demand Global. All rights reserved.
                     </p>
                     <div className="flex items-center gap-6">
-                        <a href="https://www.linkedin.com/company/tech2demand/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-xl">
+                        <a href="https://www.linkedin.com/company/tech2demand/about/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors text-[32px]">
                             <i className="ph-fill ph-linkedin-logo"></i>
                         </a>
 

@@ -156,8 +156,8 @@ const AppointmentSetting: React.FC<Props> = ({ setCurrentPage }) => {
 
               {/* Paragraph */}
               <p className="text-[17px] leading-[1.75] mb-8 max-w-[500px]" style={{ color: '#5f6577' }}>
-                Tech2Demand Global's appointment setting experts connect with your ideal prospects, qualify their needs,
-                and book meetings with your sales team—so you can focus on closing.
+                Tech2Demand Global's appointment setting experts connect with your ideal prospects,
+                qualify their needs, and book meetings with your sales team, so you can focus on closing.
               </p>
 
               {/* CTAs */}

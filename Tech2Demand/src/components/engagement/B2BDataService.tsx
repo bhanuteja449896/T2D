@@ -90,7 +90,7 @@ const B2BDataService: React.FC<Props> = ({ setCurrentPage }) => {
                 Accurate data. Better outreach. Stronger results.
               </p>
               <p className="text-[16px] leading-[1.75] mb-8 max-w-[520px]" style={{ color: '#a8abbe' }}>
-                If you have prospect requirements, we build and provide a customized B2B database as per your exact criteria — region, industry, revenue, department, and more.
+                If you have prospect requirements, we build and provide a customized B2B database as per your exact criteria, including region, industry, revenue, department, and more.
               </p>
 
               <div className="flex flex-wrap gap-4 mb-10">

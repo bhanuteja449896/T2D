@@ -268,7 +268,7 @@ const B2BData: React.FC<Props> = ({ setCurrentPage }) => {
                 We Build. You Grow.
               </h2>
               <p className="text-[14px] leading-[1.6] text-[#5f6577]">
-                We build the data manually with precision and care — exactly the way you need it.
+                We build the data manually with precision and care, exactly the way you need it.
               </p>
            </div>
 

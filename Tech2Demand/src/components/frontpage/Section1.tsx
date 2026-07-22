@@ -44,7 +44,7 @@ const Section1: React.FC<Props> = ({ setCurrentPage }) => {
                             {/* Subheadline */}
                             <StaggerItem>
                                 <p className="font-normal text-[16px] text-mediumGrey leading-[1.6] mb-[24px] max-w-[550px]">
-                                    We connect you with decision-makers, book qualified meetings, and build sales pipelines that drive predictable revenue growth. Our strategies are designed to deliver real results and up to 5X ROI.
+                                    We connect you with decision-makers, book qualified meetings, and build sales pipelines that drive predictable revenue growth. Our strategies are designed to deliver real results and up to 6X ROI.
                                 </p>
                             </StaggerItem>
 

@@ -41,21 +41,21 @@ const TalkToUs: React.FC = () => {
                             <div className="grid grid-cols-3 gap-6 py-8 border-y border-white/10 mb-12">
                                 <div className="flex flex-col">
                                     <span className="text-[32px] sm:text-[40px] font-bold text-white mb-1">
-                                        450<span className="text-[#b357ff]">+</span>
+                                        10<span className="text-[#b357ff]"> to 25</span>
                                     </span>
-                                    <span className="text-[14px] text-[#a0a8c2] uppercase tracking-wider font-semibold">Clients Served</span>
-                                </div>
-                                <div className="flex flex-col">
-                                    <span className="text-[32px] sm:text-[40px] font-bold text-white mb-1">
-                                        <span className="text-[#b357ff]">$</span>4<span className="text-[#b357ff]">B+</span>
-                                    </span>
-                                    <span className="text-[14px] text-[#a0a8c2] uppercase tracking-wider font-semibold">Revenue Generated</span>
+                                    <span className="text-[14px] text-[#a0a8c2] uppercase tracking-wider font-semibold">Qualified Leads Booked Every Month (Per Project)</span>
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="text-[32px] sm:text-[40px] font-bold text-white mb-1">
                                         5<span className="text-[#b357ff]">X</span>
                                     </span>
-                                    <span className="text-[14px] text-[#a0a8c2] uppercase tracking-wider font-semibold">Average ROI</span>
+                                    <span className="text-[14px] text-[#a0a8c2] uppercase tracking-wider font-semibold">Pipeline Growth on Average</span>
+                                </div>
+                                <div className="flex flex-col">
+                                    <span className="text-[32px] sm:text-[40px] font-bold text-white mb-1">
+                                        6<span className="text-[#b357ff]">X</span>
+                                    </span>
+                                    <span className="text-[14px] text-[#a0a8c2] uppercase tracking-wider font-semibold">ROI from Our Campaigns</span>
                                 </div>
                             </div>
                         </Reveal>
@@ -193,7 +193,7 @@ const TalkToUs: React.FC = () => {
                         <StaggerItem className="bg-white/[0.02] border border-white/10 rounded-2xl p-8 flex flex-col justify-between hover:bg-white/[0.04] transition-colors relative">
                             <i className="ph-fill ph-quotes text-[40px] text-white/10 absolute top-6 right-6"></i>
                             <p className="text-[16px] text-[#d3d8e6] leading-relaxed mb-8 italic">
-                                “The outcome could not have been better — I am hugely impressed by the console, the set-up, the accuracy of the data files you have built into it. It is intuitive, responsive, accurate, flexible and easy to use, and to top it all off, it looks great!”
+                                “The outcome could not have been better, and I am hugely impressed by the console, the set-up, the accuracy of the data files you have built into it. It is intuitive, responsive, accurate, flexible and easy to use, and to top it all off, it looks great!”
                             </p>
                             <div className="flex flex-col gap-1 border-t border-white/10 pt-6">
                                 <span className="font-bold text-white text-[16px]">Client</span>
@@ -204,7 +204,7 @@ const TalkToUs: React.FC = () => {
                         <StaggerItem className="bg-white/[0.02] border border-white/10 rounded-2xl p-8 flex flex-col justify-between hover:bg-white/[0.04] transition-colors relative">
                             <i className="ph-fill ph-quotes text-[40px] text-white/10 absolute top-6 right-6"></i>
                             <p className="text-[16px] text-[#d3d8e6] leading-relaxed mb-8 italic">
-                                “Tech2Demand produced 6 explainer videos, 8 testimonial clips, and about 15 short-form social reels over three months. Our conversion rate went from 1.8% to 3.2% — nearly doubled. The videos didn’t just look professional — they actually helped convert visitors.”
+                                “Tech2Demand produced 6 explainer videos, 8 testimonial clips, and about 15 short-form social reels over three months. Our conversion rate went from 1.8% to 3.2%, nearly doubling. The videos didn’t just look professional; they actually helped convert visitors.”
                             </p>
                             <div className="flex flex-col gap-1 border-t border-white/10 pt-6">
                                 <span className="font-bold text-white text-[16px]">Founder</span>
@@ -215,7 +215,7 @@ const TalkToUs: React.FC = () => {
                         <StaggerItem className="bg-white/[0.02] border border-white/10 rounded-2xl p-8 flex flex-col justify-between hover:bg-white/[0.04] transition-colors relative">
                             <i className="ph-fill ph-quotes text-[40px] text-white/10 absolute top-6 right-6"></i>
                             <p className="text-[16px] text-[#d3d8e6] leading-relaxed mb-8 italic">
-                                “Tech2Demand took over LinkedIn, Instagram, and YouTube. LinkedIn grew from 450 to 3,200 followers. We got 8 inbound leads directly from social media, and 2 turned into paying customers worth about $85K combined. For the first time, social actually contributed to revenue.”
+                                “Tech2Demand managed our social media presence and significantly increased our LinkedIn audience. We received 8 inbound leads directly from social media, and for the first time, social media contributed to our business growth.”
                             </p>
                             <div className="flex flex-col gap-1 border-t border-white/10 pt-6">
                                 <span className="font-bold text-white text-[16px]">Marketing Lead</span>
