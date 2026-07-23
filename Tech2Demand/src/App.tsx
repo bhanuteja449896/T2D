@@ -159,8 +159,7 @@ function App() {
       {currentPage === "b2b-data-service" && (
         <B2BDataService setCurrentPage={setCurrentPage} />
       )}
-
-      <Footer />
+      <Footer setCurrentPage={setCurrentPage} />
     </>
   );
 }

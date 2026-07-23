@@ -1,6 +1,15 @@
 import React from 'react';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+    setCurrentPage?: (page: string) => void;
+}
+
+const Footer: React.FC<FooterProps> = ({ setCurrentPage }) => {
+    const navigate = (e: React.MouseEvent, page: string) => {
+        e.preventDefault();
+        setCurrentPage && setCurrentPage(page);
+    };
+
     return (
         <footer className="w-full bg-[#050814] text-[#d3d8e6] pt-16 pb-8 border-t border-white/10 font-sans">
             <div className="w-full px-4 sm:px-6 md:px-[60px] lg:px-[100px] mx-auto">
@@ -21,8 +30,8 @@ const Footer: React.FC = () => {
                     {/* Column 2: Services */}
                     <div className="flex flex-col gap-4">
                         <h4 className="text-white font-semibold text-[18px] mb-2">Services</h4>
-                        <a href="#" className="text-[15px] hover:text-[#a64dff] transition-colors">Services Overview</a>
-                        <a href="#" className="text-[15px] hover:text-[#a64dff] transition-colors">Sales Qualified Meetings</a>
+                        <a href="#/services" onClick={(e) => navigate(e, 'services')} className="text-[15px] hover:text-[#a64dff] transition-colors">Services Overview</a>
+                        <a href="#/appointment-setting" onClick={(e) => navigate(e, 'appointment-setting')} className="text-[15px] hover:text-[#a64dff] transition-colors">Sales Qualified Meetings</a>
                         <a href="#" className="text-[15px] hover:text-[#a64dff] transition-colors">Outsourced Sales Team</a>
                     </div>
 
@@ -30,8 +39,8 @@ const Footer: React.FC = () => {
                     <div className="flex flex-col gap-8">
                         <div className="flex flex-col gap-4">
                             <h4 className="text-white font-semibold text-[18px] mb-2">Company</h4>
-                            <a href="#" className="text-[15px] hover:text-[#a64dff] transition-colors">About</a>
-                            <a href="#" className="text-[15px] hover:text-[#a64dff] transition-colors">Pricing</a>
+                            <a href="#/company" onClick={(e) => navigate(e, 'company')} className="text-[15px] hover:text-[#a64dff] transition-colors">About</a>
+                            <a href="#/engagement-models" onClick={(e) => navigate(e, 'engagement-models')} className="text-[15px] hover:text-[#a64dff] transition-colors">Pricing</a>
                             <a href="#" className="text-[15px] hover:text-[#a64dff] transition-colors">FAQs</a>
                             <a href="#" className="text-[15px] hover:text-[#a64dff] transition-colors">Career</a>
                             <a href="mailto:info@tech2demand.com" className="text-[15px] hover:text-[#a64dff] transition-colors">Contact us: info@tech2demand.com</a>
@@ -41,7 +50,7 @@ const Footer: React.FC = () => {
                     {/* Column 4: Resources */}
                     <div className="flex flex-col gap-4">
                         <h4 className="text-white font-semibold text-[18px] mb-2">Resources</h4>
-                        <a href="#" className="text-[15px] hover:text-[#a64dff] transition-colors">Blog</a>
+                        <a href="#/company" onClick={(e) => navigate(e, 'company')} className="text-[15px] hover:text-[#a64dff] transition-colors">Blog</a>
                         <a href="#" className="text-[15px] hover:text-[#a64dff] transition-colors">Guides</a>
                         <a href="#" className="text-[15px] hover:text-[#a64dff] transition-colors">News and Events</a>
                         <a href="#" className="text-[15px] hover:text-[#a64dff] transition-colors">Glossary</a>
