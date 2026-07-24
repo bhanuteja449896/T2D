@@ -4,7 +4,7 @@ interface Props {
   setCurrentPage?: (page: string) => void;
 }
 
-const Company: React.FC<Props> = ({ setCurrentPage }) => {
+const Company: React.FC<Props> = ({ setCurrentPage: _setCurrentPage }) => {
     return (
         <div className="bg-[#f8f8fc] text-[#171927] antialiased selection:bg-[#6f3cff]/30 pt-[120px]">
             <main className="relative pb-24 space-y-16">
